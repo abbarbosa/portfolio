@@ -151,3 +151,24 @@ footer {
     flex: 1 1 calc(50% - 20px); /* Alterado para 2 itens por linha em dispositivos móveis */
   }
 }
+@media only screen and (max-width: 768px) {
+  .portfolio-item {
+    flex: 1 1 calc(50% - 20px); /* Alterado para 2 itens por linha em dispositivos móveis */
+  }
+
+  .column img {
+    max-width: 50%; /* Reduzindo o tamanho da imagem na coluna para dispositivos móveis */
+  }
+
+  .column {
+    padding: 0 20px; /* Adicionando algum espaço de preenchimento lateral para as colunas em dispositivos móveis */
+  }
+
+  .text-about-me {
+    font-size: 18px; /* Aumentando ligeiramente o tamanho da fonte para dispositivos móveis */
+  }
+
+  .title-section {
+    font-size: 20px; /* Ajustando o tamanho do título para dispositivos móveis */
+  }
+}
