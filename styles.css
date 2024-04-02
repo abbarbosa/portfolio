@@ -1,44 +1,174 @@
-/* Estilos básicos */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  section {
-    padding: 20px;
-  }
-  
-  h2 {
-    color: #333;
-  }
-  
-  .portfolio-item {
-    margin-bottom: 20px;
-  }
-  
-  .portfolio-item img {
-    max-width: 100%;
-  }
-  
+
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.section {
+  padding: 50px 20px;
+  text-align: center;
+  align-items: center;
+}
+
+.portfolio-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 450px;
+}
+
+.portfolio-item {
+  margin: 20px;
+}
+
+.portfolio-item img {
+  max-width: 100%;
+}
+
+form input,
+form textarea,
+form button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+}
+
+form button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #555;
+}
+.sobre-content {
+  display: flex;
+  justify-content: center;
+}
+
+.column1{
+  flex: 1;
+  padding: 0 px; /* Adicionando padding de 10px para separação */
+  margin-right: -10px ;
+}
+
+.column {
+  flex: 1;
+  padding: 0 px; /* Adicionando padding de 10px para separação */
+}
+
+.column img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.column p {
+  margin-top: 20px;
+}
+
+.linha{
+  align-items: center;
+  width: 150px;
+}
+
+.text-about-me{
+  word-wrap: break-word;
+  text-align: center;
+  line-height: 30px;
+  margin-right: 50px;
+  font-size: 20px;
+}
+footer {
+  background-color: #dedede;
+  color: #000000;
+  padding: 20px;
+  text-align: center;
+}
+
+.links-externos {
+  margin-top: 10px;
+}
+
+.links-externos a {
+  margin-right: 10px;
+}
+
+.links-externos a:last-child {
+  margin-right: 0;
+}
+
+.links-externos img {
+  width: 50px;
+  height: 50px;
+}
+
+.gallery{
+  margin-top: 10px;
+}
+
+.portfolio-grid {
+  display: flex; /* Usando flexbox para alinhar os itens */
+  width: 1000px;
+}
+
+.portfolio-item {
+  flex: 1; /* Os itens irão preencher todo o espaço disponível */
+  margin-right: 20px; /* Adiciona um espaço entre os itens */
+}
+
+.portfolio-item:last-child {
+  margin-right: 0; /* Remove a margem direita do último item */
+}
+
+#logos {
+  display: flex;
+  justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap; /* Para que os itens quebrem para a próxima linha se não houver espaço suficiente */
+}
+
+.portfolio-item {
+  flex: 0 0 calc(33.33% - 20px); /* Define a largura de cada item, assumindo 3 itens por linha com uma margem entre eles */
+  margin: 10px; /* Espaçamento entre os itens */
+  text-align: center; /* Centraliza o conteúdo dentro de cada item */
+}
+
+.portfolio-item img {
+  max-width: 100%; /* Garante que as imagens não ultrapassem a largura do contêiner */
+}
+
+.title-section{
+  font-size: 36px;
+}
