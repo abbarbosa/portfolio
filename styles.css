@@ -31,17 +31,6 @@ nav ul li a {
   text-align: center;
 }
 
-.portfolio-grid {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.portfolio-item {
-  flex: 1 1 250px; /* Adicionado um tamanho mínimo e máximo para cada item */
-  margin: 10px;
-}
-
 .portfolio-item img {
   max-width: 100%;
 }
@@ -94,9 +83,9 @@ form button:hover {
 
 .text-about-me {
   word-wrap: break-word;
-  text-align: justify; /* Alterado para justificado */
+  text-align: center; /* Alterado para justificado */
   line-height: 1.5; /* Espaçamento entre linhas */
-  font-size: 16px; /* Reduzido o tamanho da fonte */
+  font-size: 20px; /* Reduzido o tamanho da fonte */
 }
 
 footer {
@@ -170,5 +159,79 @@ footer {
 
   .title-section {
     font-size: 20px; /* Ajustando o tamanho do título para dispositivos móveis */
+  }
+}
+
+#logos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Define duas colunas */
+  gap: 20px; /* Espaçamento entre os itens */
+}
+
+
+
+.img-logo {
+  max-width: 100%;
+  height: auto;
+}
+.chocolates-andrade{
+  margin-top: 80px;
+  width: 850px;
+}
+
+.portfolio-item {
+  position: relative;
+  display: inline-block;
+}
+.portfolio-item h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+  width: 500px;
+  color: white;
+}
+.portfolio-item:hover h3 {
+  opacity: 1;
+}
+.portfolio-item {
+  position: relative;
+  display: inline-block;
+}
+
+.portfolio-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.portfolio-item h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.portfolio-item:hover h3 {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 768px) {
+  .logos-container {
+      display: block;
+      text-align: center;
+  }
+
+  .portfolio-item {
+      margin-bottom: 20px;
   }
 }
