@@ -119,27 +119,38 @@ footer {
 .portfolio-grid {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap; /* Adicionado para itens se ajustarem em dispositivos móveis */
 }
 
 .portfolio-item {
   flex: 1;
   margin: 10px;
   text-align: center;
+  position: relative; /* Adicionado para posicionamento absoluto */
 }
 
 .portfolio-item img {
   max-width: 100%;
 }
 
-.title-section {
-  font-size: 24px; /* Reduzido o tamanho do título para dispositivos móveis */
+.portfolio-item h3 {
+  position: absolute; /* Posicionamento absoluto para centralizar texto */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+  width: 90%; /* Ajuste de largura */
+  color: white;
 }
 
-@media only screen and (max-width: 768px) {
-  .portfolio-item {
-    flex: 1 1 calc(50% - 20px); /* Alterado para 2 itens por linha em dispositivos móveis */
-  }
+.portfolio-item:hover h3 {
+  opacity: 1;
 }
+
 @media only screen and (max-width: 768px) {
   .portfolio-item {
     flex: 1 1 calc(50% - 20px); /* Alterado para 2 itens por linha em dispositivos móveis */
@@ -160,6 +171,10 @@ footer {
   .title-section {
     font-size: 20px; /* Ajustando o tamanho do título para dispositivos móveis */
   }
+
+  .portfolio-item {
+    margin-bottom: 20px; /* Adicionado margem inferior */
+  }
 }
 
 #logos {
@@ -168,95 +183,43 @@ footer {
   gap: 20px; /* Espaçamento entre os itens */
 }
 
-
-
 .img-logo {
-  width: 250px;
-}
-.chocolates-andrade{
-  margin-top: 80px;
-  width: 850px;
+  width: 100%; /* Ajustado para ocupar toda a largura */
 }
 
-.portfolio-item {
-  position: relative;
-  display: inline-block;
-}
-.portfolio-item h3 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 10px;
-  border-radius: 5px;
-  width: 500px;
-  color: white;
-}
-.portfolio-item:hover h3 {
-  opacity: 1;
-}
-.portfolio-item {
-  position: relative;
-  display: inline-block;
+.socialMedia {
+  width: 100%; /* Ajustado para ocupar toda a largura */
 }
 
-.portfolio-item img {
-  max-width: 100%;
-  height: auto;
+.title-section-black {
+  color: #fff;
 }
 
-.portfolio-item h3 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 10px;
-  border-radius: 5px;
-}
-
-.portfolio-item:hover h3 {
-  opacity: 1;
-}
-
-@media only screen and (max-width: 768px) {
-  .logos-container {
-      display: block;
-      text-align: center;
-  }
-
-  .portfolio-item {
-      margin-bottom: 20px;
-  }
-}
-
-.black-section {
-  padding: 20px; /* Reduzido o padding para dispositivos móveis */
-  text-align: center;
-  background-color: #000000;
-}
-.title-section-black{
-  color:#fff
-}
-
-.column-prototipo{
-  flex-direction: column;
-}
-
-.line-section{
+.line-section {
   width: 100px;
   color: white;
 }
-
 .imgs-logos{
   width: 1050px;
 }
-
+.real-gaz{
+  width: 550px;
+}
+.chocolates-andrade{
+  width: 1050px;
+  margin-top: 350px;
+}
+.neves-advogados{
+  width: 1050px;
+  margin-top: 50px;
+}
 .socialMedia{
   width: 1050px;
+}
+
+.black-section{
+  padding: 20px; /* Reduzido o padding para dispositivos móveis */
+  text-align: center;
+  background-color: black;
+  margin-top: 20px;
 }
