@@ -171,8 +171,7 @@ footer {
 
 
 .img-logo {
-  max-width: 100%;
-  height: auto;
+  width: 250px;
 }
 .chocolates-andrade{
   margin-top: 80px;
@@ -234,4 +233,26 @@ footer {
   .portfolio-item {
       margin-bottom: 20px;
   }
+}
+
+.black-section {
+  padding: 20px; /* Reduzido o padding para dispositivos móveis */
+  text-align: center;
+  background-color: #000000;
+}
+.title-section-black{
+  color:#fff
+}
+
+.column-prototipo{
+  flex-direction: column;
+}
+
+.line-section{
+  width: 100px;
+  color: white;
+}
+
+.imgs-logos{
+  width: 1050px;
 }
