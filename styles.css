@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -5,10 +6,11 @@ body {
 }
 
 header {
-  background-color: #333;
-  color: #fff;
+  background-color: #8579b7;
+  color: #000;
   padding: 36px;
   text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 
 nav ul {
@@ -22,8 +24,9 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff;
+  color: #000;
   text-decoration: none;
+  font-size: 24px;
 }
 
 .section {
@@ -53,7 +56,7 @@ form button {
 }
 
 form button:hover {
-  background-color: #555;
+  background-color: #8579b7;
 }
 
 .sobre-content {
@@ -89,10 +92,12 @@ form button:hover {
 }
 
 footer {
-  background-color: #dedede;
+  background-color: #8579b7;
   color: #000000;
   padding: 20px;
   text-align: center;
+  font-size: 24px;
+  align-items: center;
 }
 
 .links-externos {
@@ -130,8 +135,11 @@ footer {
 }
 
 .portfolio-item img {
-  max-width: 100%;
+  max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do contêiner */
+  height: auto; /* Permite que a altura seja ajustada automaticamente para manter a proporção */
+  width: 100%; /* Garante que a imagem ocupe toda a largura do contêiner */
 }
+
 
 .portfolio-item h3 {
   position: absolute; /* Posicionamento absoluto para centralizar texto */
@@ -140,7 +148,7 @@ footer {
   transform: translate(-50%, -50%);
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #8579b7;
   padding: 10px;
   border-radius: 5px;
   width: 90%; /* Ajuste de largura */
@@ -150,6 +158,10 @@ footer {
 .portfolio-item:hover h3 {
   opacity: 1;
 }
+
+
+
+
 
 @media only screen and (max-width: 768px) {
   .portfolio-item {
@@ -203,13 +215,18 @@ footer {
   width: 1050px;
 }
 .real-gaz{
-  width: 550px;
+  width: 350px;
+  margin-bottom: -100px;
 }
 .chocolates-andrade{
   width: 1050px;
-  margin-top: 350px;
+  margin-top: 120px;
 }
 .neves-advogados{
+  width: 1050px;
+  margin-top: 50px;
+}
+.revista-abstracao{
   width: 1050px;
   margin-top: 50px;
 }
@@ -223,3 +240,18 @@ footer {
   background-color: black;
   margin-top: 20px;
 }
+@media only screen and (max-width: 768px) {
+  #logos {
+    grid-template-columns: 1fr; /* Define uma única coluna para telas menores */
+  }
+  .portfolio-item {
+    flex: 1 1 100%; /* Define a largura de cada item para 100% para ocupar a largura total */
+    margin-bottom: 50px; /* Adiciona margem inferior entre as imagens */
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  #logos {
+    grid-template-columns: repeat(2, 1fr); /* Define duas colunas para telas maiores */
+  }}
+
