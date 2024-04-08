@@ -48,14 +48,14 @@ form button {
 }
 
 form button {
-  background-color: #333;
-  color: #fff;
+  background-color: #000000;
+  color: #ffffff;
   border: none;
   cursor: pointer;
 }
 
 form button:hover {
-  background-color: #8579b7;
+  background-color: #ffffff;
 }
 
 .sobre-content {
