@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -7,10 +8,17 @@ body {
 }
 
 header {
-  background-color: #d5bbff;
-  color: #000000;
+  background-color: #ffffff;
+  color: #222222;
   padding: 36px;
   text-align: center;
+  gap: 25px;
+  font-family: "Quicksand", sans-serif;
+}
+
+header :hover {
+  transition: 1s ease-in-out;
+  color: #FA8E45;
 }
 
 nav ul {
@@ -29,71 +37,98 @@ nav ul li a {
   font-size: 24px;
 }
 
-.section {
+/* .section {
+  padding: 20px;
+  text-align: center;
+} */
+
+/* .column-prototipo .portfolio-item {
+  width: 100%;
+  /* Define a largura total para cada item */
+
+
+.section-about-me {
+  background-color: #756580;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  padding: 20px;
+  text-align: center;
+  border-radius: 80px 80px 0px 0px;
+  width: 90%;
+  margin-left: 5%;
+  align-items: center;
+}
+
+.section-services{
   padding: 20px;
   text-align: center;
 }
-.column-prototipo .portfolio-item {
-  width: 100%; /* Define a largura total para cada item */
+
+
+.container {
+  text-align: center; /* centraliza os botões */
 }
 
-form input,
-form textarea,
-form button {
-  display: block;
-  margin: 10px auto;
-  padding: 10px;
-  width: calc(100% - 20px);
-  max-width: 400px;
-}
-
-form button {
-  background-color: #000000;
-  color: #ffffff;
+.btn {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #FA8E45;
+  color: #222;
+  font-family: "Quicksand", sans-serif;
   border: none;
+  border-radius: 80px;
+  height: 75%;
+  width: 70%px;
   cursor: pointer;
+  display: inline-block; /* exibe os botões lado a lado */
 }
 
-form button:hover {
+.area {
+  display: none;
+  padding: 20px;
+  margin-top: 10px;
   background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
-
-.sobre-content {
-  display: flex;
-  flex-direction: column;
-}
-
+/* 
 .column1,
 .column {
   padding: 0;
   margin: 10px 0;
-}
+} */
 
-.column img {
+/* .column img {
   max-width: 100%;
   height: auto;
   border-radius: 50%;
-}
+} */
 
-.column p {
+/* .column p {
   margin-top: 20px;
 }
 
-.linha {
-  width: 100px;
-  color: #000;
-  
-}
+
 
 .text-about-me {
   word-wrap: break-word;
   text-align: center;
   line-height: 1.5;
   font-size: 20px;
+} */
+.linha {
+  width: 100px;
+  color: #000;
+
+}
+
+.titleService{
+  text-align: center;
+  align-items:center ;
 }
 
 footer {
-  background-color: #d5bbff;
+  background-color: #ffffff;
   color: #000000;
   padding: 20px;
   text-align: center;
@@ -119,6 +154,7 @@ footer {
 
 .gallery {
   margin-top: 10px;
+  margin-left: 5%;
 }
 
 .portfolio-grid {
@@ -154,9 +190,10 @@ footer {
   color: white;
 }
 
-.nicheNet{
+.nicheNet {
   height: 200px;
 }
+
 
 
 @media only screen and (max-width: 768px) {
@@ -249,35 +286,40 @@ footer {
   background-color: black;
   margin-top: 20px;
 }
+
 @media only screen and (max-width: 768px) {
   #logos {
-    grid-template-columns: repeat(1, 1fr); /* Altera para uma coluna em dispositivos móveis */
+    grid-template-columns: repeat(1, 1fr);
+    /* Altera para uma coluna em dispositivos móveis */
   }
 
   .portfolio-item {
-    flex: 1 1 calc(100% - 20px); /* Define a largura total */
+    flex: 1 1 calc(100% - 20px);
+    /* Define a largura total */
     margin-bottom: 20px;
   }
-  
-  .chocolates-andrade{
+
+  .chocolates-andrade {
     margin-top: 250px;
   }
 
-  .sinapse{
+  .sinapse {
     margin-top: -30px;
   }
 
-  .docelu{
+  .docelu {
     margin-top: -100px;
   }
-  .revista-abstracao{
+
+  .revista-abstracao {
     margin-top: 5px;
   }
+
   .patinhas {
     margin-top: 25px;
   }
 
-  .neves-advogados{
+  .neves-advogados {
     margin-top: 150px;
   }
 }

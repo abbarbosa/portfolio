@@ -6,31 +6,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meu Portfólio</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
 </head>
 
 <body>
   <header>
-    <h1 class="titulo">Meu Portfólio</h1>
+    <!-- <h1 class="titulo">Meu Portfólio</h1> -->
     <nav>
       <ul>
         <li><a href="#sobre">Sobre Mim</a></li>
-        <li><a href="#logotipos">Logotipos</a></li>
+        <!-- <li><a href="#logotipos">Logotipos</a></li>
         <li><a href="#prototipos">Protótipos</a></li>
         <li><a href="#aplicacoes">Aplicações</a></li>
         <li><a href="#fotografia">Fotografia</a></li>
-        <li><a href="#socialMedia">Social Media Design</a></li>
-        <li><a href="https://drive.google.com/file/d/16MeXeAFqKWPTdkc5nJhO-Sxi4JlAcsIm/view?usp=drive_link"
+        <li><a href="#socialMedia">Social Media Design</a></li> -->
+        <li> <a href="#services">Serviços</a></li> 
+        <li><a href="https://drive.google.com/file/d/1ZLqW50jPc2HzdEw6qI_ps5rpE5wBnYlJ/view?usp=drive_link"
             target="_blank">Meu Curriculo</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="sobre" class="section">
+  <section id="sobre" class="section-about-me">
     <h2 class="title-section">Sobre Mim</h2>
     <hr class="linha">
     <div class="sobre-content">
       <div class="column">
-        <img src="imgs/annabia.png" alt="Foto de Anna Beatriz, designer e criadora do site">
+        <img src="imgs/Vector.png" alt="Foto de Anna Beatriz, designer e criadora do site">
       </div>
       <div class="column1">
         <h1>Hello World!</h1>
@@ -49,32 +51,110 @@
       </div>
     </div>
 
-    <div class="gallery">
-      <img
-        src="https://img.shields.io/badge/Adobe%20Creative%20Cloud-DA1F26?style=for-the-badge&logo=Adobe%20Creative%20Cloud&logoColor=white"
-        alt="Adobe Creative Cloud">
-      <img
-        src="https://img.shields.io/badge/Adobe%20Illustrator-FF9A00?style=for-the-badge&logo=adobe%20illustrator&logoColor=white"
-        alt="Adobe Illustrator">
-      <img
-        src="https://img.shields.io/badge/Adobe%20Photoshop-31A8FF?style=for-the-badge&logo=Adobe%20Photoshop&logoColor=black"
-        alt="Adobe Photoshop">
-      <img
-        src="https://img.shields.io/badge/Adobe%20Lightroom-31A8FF?style=for-the-badge&logo=Adobe%20Lightroom&logoColor=white"
-        alt="Adobe Lightroom">
-      <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="">
-      <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="">
-      <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"
-        alt="">
-      <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
-        alt="">
-      <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="">
-      <img src="https://img.shields.io/badge/Canva-%2300C4CC.svg?&style=for-the-badge&logo=Canva&logoColor=white"
-        alt="">
-    </div>
+    
   </section>
+  <div class="gallery">
+    <img
+      src="https://img.shields.io/badge/Adobe%20Creative%20Cloud-222222?style=for-the-badge&logo=Adobe%20Creative%20Cloud&logoColor=#000000"
+      alt="Adobe Creative Cloud">
+    <img
+      src="https://img.shields.io/badge/Adobe%20Illustrator-222222?style=for-the-badge&logo=adobe%20illustrator&logoColor=white"
+      alt="Adobe Illustrator">
+    <img
+      src="https://img.shields.io/badge/Adobe%20Photoshop-222222?style=for-the-badge&logo=Adobe%20Photoshop&logoColor=white"
+      alt="Adobe Photoshop">
+    <img
+      src="https://img.shields.io/badge/Adobe%20Lightroom-222222?style=for-the-badge&logo=Adobe%20Lightroom&logoColor=white"
+      alt="Adobe Lightroom">
+    <img src="https://img.shields.io/badge/HTML5-222222?style=for-the-badge&logo=html5&logoColor=white" alt="">
+    <img src="https://img.shields.io/badge/CSS3-222222?style=for-the-badge&logo=css3&logoColor=white" alt="">
+    <img src="https://img.shields.io/badge/JavaScript-222222?style=for-the-badge&logo=javascript&logoColor=black"
+      alt="">
+    <img src="https://img.shields.io/badge/React_Native-222222?style=for-the-badge&logo=react&logoColor=61DAFB"
+      alt="">
+    <img src="https://img.shields.io/badge/Figma-222222?style=for-the-badge&logo=figma&logoColor=white" alt="">
+    <img src="https://img.shields.io/badge/Canva-222222.svg?&style=for-the-badge&logo=Canva&logoColor=white"
+      alt="">
+  </div>
 
-  <section id="logotipos" class="section">
+  <section id="services" class="section-services">
+    <h2 class="title-section">Serviços</h2>
+    <hr class="linha">
+    <div class="container">
+      <button class="btn" onclick="toggleArea(1)">Logotipos</button>
+      <button class="btn" onclick="toggleArea(2)">Social Media</button>
+      <button class="btn" onclick="toggleArea(3)">Fotografia</button>
+      <button class="btn" onclick="toggleArea(4)">Prototipação</button>
+      <button class="btn" onclick="toggleArea(5)">Aplicações Web e Mobile</button>
+    
+      <div class="area" id="area1">
+        <h2 class="title-section">Logotipos </h2>
+        <hr class="linha">
+        <div id="logos">
+          <div class="portfolio-item">
+            <img class="real-gaz" src="imgs/RealGaz.png" alt="Brasão em forma de gás">
+            <h3>Logotipo para empresa base de Araucária - PR </h3>
+          </div>
+          <div class="portfolio-item">
+            <img class="chocolates-andrade" class="chocolates-andrade" src="imgs/chcolates-andrade.png"
+              alt="Escrita Chocolates Andrade">
+            <h3>Logotipo para campanha de páscoa </h3>
+          </div>
+          <div class="portfolio-item">
+            <img class="sinapse" src="imgs/sinapse.png"
+              alt="ícone de lâmpada em forma com um cerebro dentro e ao lado a escrita Sinpase">
+            <h3>Logotipo para empresa de comunicação e multimídia </h3>
+          </div>
+          <div class="portfolio-item">
+            <img class="patinhas" src="imgs/Patinhas-png.png"
+              alt="Escrita patinhas com ícones em forma de pata nas letras A">
+            <h3>Logotipo para uma ONG</h3>
+          </div>
+          <div class="portfolio-item">
+            <img class="docelu" src="imgs/GuiaEstilosDoceLu.png" alt="  Escrita docelu com ícone de donut na letra O">
+            <h3>Logotipo para doceria</h3>
+          </div>
+          <div class="portfolio-item">
+            <img class="revista-abstracao" src="imgs/revista-abstracao.png"
+              alt="Escrita Abstração com a letra B e Ç invertidas e ícones de triângulos em tons de cinza">
+            <h3>Logotipo para revista de design</h3>
+          </div>
+          <div class="portfolio-item">
+            <img class="neves-advogados" src="imgs/NevesAdvogadosLogotipo.png"
+              alt="Enmpresa de advocacia com um ícone de arco e flecha">
+            <h3>Empresa de advocacia</h3>
+          </div>
+          <div class="portfolio-item">
+            <img class="imgs-logos" src="imgs/BigDash.png"
+              alt="Logotipo nas cores roxo e rosa sendo tendo um ícone metade lâmpada e metade cerebro">
+            <h3>Empresa de BigData e Dashboard</h3>
+          </div>
+        </div>
+      </div>
+      <div class="area" id="area2">
+        <div class="portfolio-grid">
+          <h2 class="title-section">Social Media </h2>
+          <div class="portfolio-item">
+            <!-- <a href="https://www.behance.net/gallery/191445479/Social-Media-Plus-Design">
+              <img class="socialMedia" src="imgs/SocialMedia.png" alt="Mockups">
+            </a> -->
+            <a href="https://www.behance.net/gallery/191445479/Social-Media-Plus-Design">
+              <img class="socialMedia" src="imgs/Template - carrosel- especial.png" alt="Mockups">
+            </a>
+            <h3>Projeto Social Media para revista de Design</h3>
+          </div>
+        </div>
+      </div>
+      <div class="area" id="area3">
+        Conteúdo da Área 3
+      </div>
+      <div class="area" id="area4">
+        Conteúdo da Área 4
+      </div>
+    </div>
+    
+  </section>
+  <!-- <section id="logotipos" class="section">
     <h2 class="title-section">Logotipos</h2>
     <hr class="linha">
     <div id="logos">
@@ -114,7 +194,7 @@
       <div class="portfolio-item">
         <img class="imgs-logos" src="imgs/BigDash.png"
           alt="Logotipo nas cores roxo e rosa sendo tendo um ícone metade lâmpada e metade cerebro">
-        <h3>Empresa de BigData  e Dashboard</h3>
+        <h3>Empresa de BigData e Dashboard</h3>
       </div>
     </div>
   </section>
@@ -174,10 +254,7 @@
           <h3>Ensaio de joias</h3>
       </div>
   </section>
-
-  <section class="section">
-    <h2 class="title-section">Social Media </h2>
-    <hr class="linha">
+r class="linha">
     <div class="portfolio-grid">
       <div class="portfolio-item">
         <a href="https://www.behance.net/gallery/191445479/Social-Media-Plus-Design">
@@ -189,16 +266,21 @@
         <h3>Projeto Social Media para revista de Design</h3>
       </div>
     </div>
-  </section>
+  <section class="section">
+    <h2 class="title-section">Social Media </h2>
+    <h
+  </section> -->
 
 
   <footer>
     <div class="links-externos">
+      <br>
       <a href="https://www.linkedin.com/in/annabiab/" target="_blank"><img src="imgs/linkedin.svg" alt="Link 1"></a>
       <a href="https://www.behance.net/annabiab" target="_blank"><img src="imgs/behance.svg" alt="Link 2"></a>
-      <a href="https://www.instagram.com/annabia.design/" target="_blank"><img src="imgs/instagram.svg" alt="Link 4"></a>
+      <a href="https://www.instagram.com/annabia.design/" target="_blank"><img src="imgs/instagram.svg"
+          alt="Link 4"></a>
       <a href="https://github.com/abbarbosa" target="_blank"><img src="imgs/github.svg" alt="Link 3"></a>
-      <p>Para demais redes</p>
+      <!-- <p>Para demais redes</p> -->
     </div>
   </footer>
 </body>
