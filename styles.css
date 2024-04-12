@@ -8,7 +8,7 @@ body {
 }
 
 header {
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   color: #222222;
   padding: 36px;
   text-align: center;
@@ -32,7 +32,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #000;
+  color: #222;
   text-decoration: none;
   font-size: 24px;
 }
@@ -48,6 +48,8 @@ nav ul li a {
 
 
 .section-about-me {
+  /* background-color: #8579b7;
+    color: rgb(0, 0, 0); */
   background-color: #756580;
   color: white;
   font-family: "Quicksand", sans-serif;
@@ -55,32 +57,63 @@ nav ul li a {
   text-align: center;
   border-radius: 80px 80px 0px 0px;
   width: 90%;
+  height: 500px;
   margin-left: 5%;
+  display: flex;
   align-items: center;
 }
 
-.section-services{
+.sobre-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.column {
+  flex: 1;
+}
+
+.column img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.column1 {
+  flex: 2;
+  padding: 0 20px;
+}
+
+.hello-world {
+  font-size: 150px;
+  text-decoration: underline;
+}
+
+.section-services {
   padding: 20px;
   text-align: center;
 }
 
 
 .container {
-  text-align: center; /* centraliza os botões */
+  text-align: center;
+  /* centraliza os botões */
 }
 
 .btn {
-  margin: 5px;
-  padding: 10px 20px;
+  margin-left: 20px;
   background-color: #FA8E45;
   color: #222;
+  font-size: 20px;
   font-family: "Quicksand", sans-serif;
   border: none;
   border-radius: 80px;
-  height: 75%;
-  width: 70%px;
+  margin-top: 40px;
+  height: 175px;
+  width: 270px;
   cursor: pointer;
-  display: inline-block; /* exibe os botões lado a lado */
+  display: inline-block;
+  /* exibe os botões lado a lado */
 }
 
 .area {
@@ -91,45 +124,47 @@ nav ul li a {
   border: 1px solid #ddd;
   border-radius: 5px;
 }
-/* 
-.column1,
-.column {
-  padding: 0;
-  margin: 10px 0;
-} */
 
-/* .column img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 50%;
-} */
-
-/* .column p {
-  margin-top: 20px;
+#logos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
 }
 
+.portfolio-item {
+  text-align: center;
+}
+
+.portfolio-item img {
+  max-width: 100%;
+  border-radius: 10px;
+  /* Adiciona bordas arredondadas às imagens */
+}
+
+
+
+@media (max-width: 768px) {
+  #logos {
+    grid-template-columns: 1fr;
+    /* Altera para uma coluna em telas menores */
+  }
+}
 
 
 .text-about-me {
   word-wrap: break-word;
   text-align: center;
   line-height: 1.5;
-  font-size: 20px;
-} */
-.linha {
-  width: 100px;
-  color: #000;
-
+  font-size: 24px;
 }
 
-.titleService{
+
+.titleService {
   text-align: center;
-  align-items:center ;
+  align-items: center;
 }
 
 footer {
-  background-color: #ffffff;
-  color: #000000;
   padding: 20px;
   text-align: center;
   font-size: 24px;
@@ -153,8 +188,8 @@ footer {
 }
 
 .gallery {
-  margin-top: 10px;
-  margin-left: 5%;
+  margin-top: -70px;
+  margin-left: 85px;
 }
 
 .portfolio-grid {
@@ -170,11 +205,15 @@ footer {
   position: relative;
 }
 
+
+
 .portfolio-item img {
   max-width: 100%;
   height: auto;
   width: 100%;
 }
+
+
 
 .portfolio-item h3 {
   position: absolute;
@@ -183,143 +222,161 @@ footer {
   transform: translate(-50%, -50%);
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
-  background-color: #8579b7;
+  background-color: #FA8E45;
   padding: 10px;
   border-radius: 5px;
   width: 90%;
   color: white;
 }
 
+
+.portfolio-item:hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #22222280;
+  /* Cor de fundo com opacidade baixa */
+  border-radius: 10px;
+  /* Mesmo valor de borda arredondada das imagens */
+}
+
+.portfolio-item:hover h3 {
+  opacity: 1;
+  /* Mostra a descrição quando o mouse passa por cima */
+}
+
 .nicheNet {
   height: 200px;
 }
 
-
-
-@media only screen and (max-width: 768px) {
-  .portfolio-item {
-    flex: 1 1 calc(50% - 20px);
-  }
-
-  .column img {
-    max-width: 50%;
-  }
-
-  .column {
-    padding: 0 20px;
-  }
-
-  .text-about-me {
-    font-size: 18px;
-  }
-
-  .title-section {
-    font-size: 20px;
-  }
-
-  .portfolio-item {
-    margin-bottom: 20px;
-  }
-}
-
-#logos {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-
-.img-logo {
-  width: 100%;
-}
-
-.socialMedia {
-  width: 100%;
-}
-
-.title-section-black {
-  color: #fff;
-}
-
-.line-section {
-  width: 100px;
-  color: white;
-}
-
-.imgs-logos {
-  width: 100%;
-}
-
-.real-gaz {
-  margin-bottom: -250px;
-  width: 200px;
+.img-anna {
+  border-radius: 10%;
+  width: 500px;
 }
 
 .chocolates-andrade {
-  margin-top: 450px;
-}
-
-.neves-advogados {
-  width: 100%;
   margin-top: 50px;
 }
 
 .revista-abstracao {
-  width: 100%;
+  margin-top: 70px;
+}
+
+.neves-advogados {
   margin-top: 50px;
 }
 
-.patinhas {
-  margin-bottom: -390px;
-}
-
-.sinapse {
+.bigDash {
   margin-top: 250px;
 }
 
-.socialMedia {
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.8);
+  overflow-x: hidden;
+  transition: 0.5s;
+  display: none; /* Adicione esta linha para ocultar o modal inicialmente */
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
   width: 100%;
-}
-
-.black-section {
-  padding: 20px;
   text-align: center;
-  background-color: black;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
-@media only screen and (max-width: 768px) {
-  #logos {
-    grid-template-columns: repeat(1, 1fr);
-    /* Altera para uma coluna em dispositivos móveis */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  text-align: start;
+  font-size: 24px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #FA8E45;
+}
+
+.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+  color: white;
+}
+
+.closebtn:hover {
+  color: #FA8E45;
+}
+
+.menu-toggle {
+  display: none;
+  margin-left: -270px;
+}
+
+@media only screen and (max-width: 480px) {
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
   }
 
-  .portfolio-item {
-    flex: 1 1 calc(100% - 20px);
-    /* Define a largura total */
-    margin-bottom: 20px;
+  .menu {
+    display: none;
   }
 
-  .chocolates-andrade {
-    margin-top: 250px;
+  .menu.active {
+    display: block;
   }
 
-  .sinapse {
-    margin-top: -30px;
+  .overlay {
+    width: 100%;
   }
 
-  .docelu {
-    margin-top: -100px;
+  /* Ajustes para a seção "Sobre Mim" */
+  .section-about-me {
+    flex-direction: column;
+    height: auto; /* Permitir que a altura seja ajustada automaticamente */
+    width: 100%; /* Faz com que a seção ocupe toda a largura da tela em dispositivos menores */
+    margin-left: 0; /* Remove a margem esquerda em dispositivos menores */
+    border-radius: 0; /* Remove o arredondamento das bordas em dispositivos menores */
+    padding: 20px;
+    text-align: center;
   }
 
-  .revista-abstracao {
-    margin-top: 5px;
+  .sobre-content {
+    margin-top: 20px;
   }
 
-  .patinhas {
-    margin-top: 25px;
+  .column {
+    text-align: center;
+    width: 100%; /* Define a largura da coluna */
   }
 
-  .neves-advogados {
-    margin-top: 150px;
+  .column img {
+    margin-bottom: 20px; /* Adiciona um espaço entre a imagem e o texto */
+    max-width: 100%;
+    border-radius: 50%;
+  }
+
+  .column1 {
+    width: 100%; /* Define a largura da coluna */
+    padding: 0 20px;
   }
 }
+
+  
+ 

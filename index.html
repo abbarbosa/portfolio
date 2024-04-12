@@ -11,48 +11,46 @@
 
 <body>
   <header>
-    <!-- <h1 class="titulo">Meu Portfólio</h1> -->
-    <nav>
+    <div class="menu-toggle" onclick="openNav()">&#9776;</div>
+    <nav class="menu">
       <ul>
-        <li><a href="#sobre">Sobre Mim</a></li>
-        <!-- <li><a href="#logotipos">Logotipos</a></li>
-        <li><a href="#prototipos">Protótipos</a></li>
-        <li><a href="#aplicacoes">Aplicações</a></li>
-        <li><a href="#fotografia">Fotografia</a></li>
-        <li><a href="#socialMedia">Social Media Design</a></li> -->
-        <li> <a href="#services">Serviços</a></li> 
-        <li><a href="https://drive.google.com/file/d/1ZLqW50jPc2HzdEw6qI_ps5rpE5wBnYlJ/view?usp=drive_link"
-            target="_blank">Meu Curriculo</a></li>
+        <li><a href="#sobre" onclick="closeNav()">Sobre Mim</a></li>
+        <li><a href="#services" onclick="closeNav()">Serviços</a></li>
+        <li><a href="https://drive.google.com/file/d/1ZLqW50jPc2HzdEw6qI_ps5rpE5wBnYlJ/view?usp=drive_link" target="_blank" onclick="closeNav()">Meu Currículo</a></li>
       </ul>
     </nav>
   </header>
+  
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="#sobre" onclick="closeNav()">Sobre Mim</a>
+      <a href="#services" onclick="closeNav()">Serviços</a>
+      <a href="https://drive.google.com/file/d/1ZLqW50jPc2HzdEw6qI_ps5rpE5wBnYlJ/view?usp=drive_link" target="_blank" onclick="closeNav()">Meu Currículo</a>
+    </div>
+  </div>
 
   <section id="sobre" class="section-about-me">
-    <h2 class="title-section">Sobre Mim</h2>
-    <hr class="linha">
+    <!-- <h2>Hello World!</h2> -->
+    <div class="column">
+      <!-- <h1>Hello World!</h1> -->
+      <p class="text-about-me">Meu nome é Anna Beatriz, tenho 18 anos e sou uma entusiasta da tecnologia e da
+        criatividade. Atualmente, estou estudando desenvolvimento de sistemas e multimídia, mergulhando em um mundo
+        fascinante de código, design e narrativa digital. Estou sempre em busca de aprender novas habilidades e explorar
+        novas tecnologias para criar experiências digitais envolventes e inovadoras. Estou animada para continuar minha
+        jornada de aprendizado e crescimento, enquanto me esforço para fazer minha marca no mundo da tecnologia.</p>
+      <p class="text-about-me">Seja bem-vindo(a) aqui e espero que goste! 😊</p>
+    </div>
+    </div>
     <div class="sobre-content">
       <div class="column">
-        <img src="imgs/Vector.png" alt="Foto de Anna Beatriz, designer e criadora do site">
+        <img class="img-anna" src="imgs/annabiab.jpg" alt="Foto de Anna Beatriz, designer e criadora do site">
       </div>
-      <div class="column1">
-        <h1>Hello World!</h1>
-        <p class="text-about-me"> Meu nome é Anna Beatriz,
-          tenho 18 anos e sou uma entusiasta da tecnologia e da criatividade.
-          Atualmente, estou estudando desenvolvimento de sistemas e multimídia,
-          mergulhando em um mundo fascinante de código, design e narrativa digital.
-          Estou sempre em busca de aprender novas habilidades e explorar novas
-          tecnologias para criar experiências digitais envolventes e inovadoras.
-          Estou animada para continuar minha jornada de aprendizado e crescimento,
-          enquanto me esforço para fazer minha marca no mundo da tecnologia.
-        </p>
-        <p class="text-about-me">
-          Seja bem vindo(a) aqui e espero que goste!😊
-        </p>
-      </div>
-    </div>
 
-    
   </section>
+
+
+
   <div class="gallery">
     <img
       src="https://img.shields.io/badge/Adobe%20Creative%20Cloud-222222?style=for-the-badge&logo=Adobe%20Creative%20Cloud&logoColor=#000000"
@@ -70,34 +68,29 @@
     <img src="https://img.shields.io/badge/CSS3-222222?style=for-the-badge&logo=css3&logoColor=white" alt="">
     <img src="https://img.shields.io/badge/JavaScript-222222?style=for-the-badge&logo=javascript&logoColor=black"
       alt="">
-    <img src="https://img.shields.io/badge/React_Native-222222?style=for-the-badge&logo=react&logoColor=61DAFB"
-      alt="">
+    <img src="https://img.shields.io/badge/React_Native-222222?style=for-the-badge&logo=react&logoColor=61DAFB" alt="">
     <img src="https://img.shields.io/badge/Figma-222222?style=for-the-badge&logo=figma&logoColor=white" alt="">
-    <img src="https://img.shields.io/badge/Canva-222222.svg?&style=for-the-badge&logo=Canva&logoColor=white"
-      alt="">
+    <img src="https://img.shields.io/badge/Canva-222222.svg?&style=for-the-badge&logo=Canva&logoColor=white" alt="">
   </div>
 
   <section id="services" class="section-services">
-    <h2 class="title-section">Serviços</h2>
-    <hr class="linha">
+    <!-- <h2 class="title-section">Serviços</h2> -->
     <div class="container">
       <button class="btn" onclick="toggleArea(1)">Logotipos</button>
       <button class="btn" onclick="toggleArea(2)">Social Media</button>
       <button class="btn" onclick="toggleArea(3)">Fotografia</button>
       <button class="btn" onclick="toggleArea(4)">Prototipação</button>
       <button class="btn" onclick="toggleArea(5)">Aplicações Web e Mobile</button>
-    
+
       <div class="area" id="area1">
-        <h2 class="title-section">Logotipos </h2>
-        <hr class="linha">
+        <!-- <h2 class="title-section">Logotipos </h2> -->
         <div id="logos">
           <div class="portfolio-item">
             <img class="real-gaz" src="imgs/RealGaz.png" alt="Brasão em forma de gás">
             <h3>Logotipo para empresa base de Araucária - PR </h3>
           </div>
           <div class="portfolio-item">
-            <img class="chocolates-andrade" class="chocolates-andrade" src="imgs/chcolates-andrade.png"
-              alt="Escrita Chocolates Andrade">
+            <img class="bigDash" src="imgs/BigDash.png" alt="">
             <h3>Logotipo para campanha de páscoa </h3>
           </div>
           <div class="portfolio-item">
@@ -125,15 +118,15 @@
             <h3>Empresa de advocacia</h3>
           </div>
           <div class="portfolio-item">
-            <img class="imgs-logos" src="imgs/BigDash.png"
-              alt="Logotipo nas cores roxo e rosa sendo tendo um ícone metade lâmpada e metade cerebro">
-            <h3>Empresa de BigData e Dashboard</h3>
+            <img class="chocolates-andrade" src="imgs/chcolates-andrade.png" alt="Escrita Chocolates Andrade">
+            <h3>Logotipo para campanha de páscoa</h3>
           </div>
         </div>
       </div>
+
       <div class="area" id="area2">
         <div class="portfolio-grid">
-          <h2 class="title-section">Social Media </h2>
+          <!-- <h2 class="title-section">Social Media </h2> -->
           <div class="portfolio-item">
             <!-- <a href="https://www.behance.net/gallery/191445479/Social-Media-Plus-Design">
               <img class="socialMedia" src="imgs/SocialMedia.png" alt="Mockups">
@@ -146,87 +139,78 @@
         </div>
       </div>
       <div class="area" id="area3">
-        Conteúdo da Área 3
+        <div class="portfolio-grid">
+          <div class="portfolio-item">
+            <a href="https://drive.google.com/drive/folders/11f_kAyAJUOaehp7JKvnWY5u9lDszSvTW?usp=sharing">
+              <img src="imgs/fotos.png" alt="">
+            </a>
+            <h3>Ensaio de joias</h3>
+          </div>
+        </div>
       </div>
       <div class="area" id="area4">
-        Conteúdo da Área 4
+
+        <div class="portfolio-grid">
+          <div class="portfolio-item">
+            <a
+              href="https://www.figma.com/file/zVz49rsmxzgSsqHxXqPCvV/Nichenet?type=design&mode=design&t=M0pTX7V8pfpNRq3Q-1"><img
+                class="nicheNet" src="imgs//mockup-nichnet.png" alt="Protótipo 1"></a>
+            <h3>Desktop e Mobile para empresa NicheNet</h3>
+          </div>
+
+          <div class="portfolio-item">
+            <a
+              href="https://www.figma.com/file/8N0vuPuU6l9fgZQjkAo4H4/Prot%C3%B3tipo-de-alta-fidelidade?type=design&mode=design&t=M0pTX7V8pfpNRq3Q-1"><img
+                src="imgs/mockup-x-challenge.png"
+                alt="Protótipo para um site de avisos sobre a competição WorldSkills"></a>
+            <h3>Desafio de uma competição</h3>
+          </div>
+
+          <div class="portfolio-item">
+            <a
+              href="https://www.figma.com/file/2KFctdxbqFPZO9tcl7Fxq4/Prot%C3%B3tipo-de-alta-fidelidade-(wireframe)-(Copy)?type=design&mode=design&t=M0pTX7V8pfpNRq3Q-1"><img
+                src="imgs/mockup-geto.png" alt="Protótipo para um site de compras"></a>
+            <h3>Desktop e Mobile de uma loja de roupa</h3>
+          </div>
+        </div>
       </div>
     </div>
+    <div class="area" id="area5">
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <a href="https://github.com/abbarbosa/G-TO"><img src="imgs/GetoPrototipo.png" alt="Foto 1"></a>
+          <h3>Site Institucional</h3>
+        </div>
+        <div class="portfolio-item">
+          <a href="https://github.com/abbarbosa/vitalhub"><img src="imgs/VitalHub.png" alt="Foto 1"></a>
+          <h3>Aplicativo de consulta</h3>
+        </div>
+      </div> 
+    </div>
+    </div>
+  </section>
+  <footer>
+    <div class="links-externos">
+      <a href="https://www.linkedin.com/in/annabiab/" target="_blank"><img src="imgs/linkedin.svg" alt="Link 1"></a>
+      <a href="https://www.behance.net/annabiab" target="_blank"><img src="imgs/behance.svg" alt="Link 2"></a>
+      <a href="https://www.instagram.com/annabia.design/" target="_blank"><img src="imgs/instagram.svg"
+          alt="Link 4"></a>
+      <a href="https://github.com/abbarbosa" target="_blank"><img src="imgs/github.svg" alt="Link 3"></a>
+
+    </div>
+  </footer>
+</body>
+
+</html>
+
+<!-- 
     
-  </section>
-  <!-- <section id="logotipos" class="section">
-    <h2 class="title-section">Logotipos</h2>
-    <hr class="linha">
-    <div id="logos">
-      <div class="portfolio-item">
-        <img class="real-gaz" src="imgs/RealGaz.png" alt="Brasão em forma de gás">
-        <h3>Logotipo para empresa base de Araucária - PR </h3>
-      </div>
-      <div class="portfolio-item">
-        <img class="chocolates-andrade" class="chocolates-andrade" src="imgs/chcolates-andrade.png"
-          alt="Escrita Chocolates Andrade">
-        <h3>Logotipo para campanha de páscoa </h3>
-      </div>
-      <div class="portfolio-item">
-        <img class="sinapse" src="imgs/sinapse.png"
-          alt="ícone de lâmpada em forma com um cerebro dentro e ao lado a escrita Sinpase">
-        <h3>Logotipo para empresa de comunicação e multimídia </h3>
-      </div>
-      <div class="portfolio-item">
-        <img class="patinhas" src="imgs/Patinhas-png.png"
-          alt="Escrita patinhas com ícones em forma de pata nas letras A">
-        <h3>Logotipo para uma ONG</h3>
-      </div>
-      <div class="portfolio-item">
-        <img class="docelu" src="imgs/GuiaEstilosDoceLu.png" alt="  Escrita docelu com ícone de donut na letra O">
-        <h3>Logotipo para doceria</h3>
-      </div>
-      <div class="portfolio-item">
-        <img class="revista-abstracao" src="imgs/revista-abstracao.png"
-          alt="Escrita Abstração com a letra B e Ç invertidas e ícones de triângulos em tons de cinza">
-        <h3>Logotipo para revista de design</h3>
-      </div>
-      <div class="portfolio-item">
-        <img class="neves-advogados" src="imgs/NevesAdvogadosLogotipo.png"
-          alt="Enmpresa de advocacia com um ícone de arco e flecha">
-        <h3>Empresa de advocacia</h3>
-      </div>
-      <div class="portfolio-item">
-        <img class="imgs-logos" src="imgs/BigDash.png"
-          alt="Logotipo nas cores roxo e rosa sendo tendo um ícone metade lâmpada e metade cerebro">
-        <h3>Empresa de BigData e Dashboard</h3>
-      </div>
-    </div>
-  </section>
+    
+  
 
 
   <section id="prototipos" class="black-section">
-    <h2 class="title-section-black">Protótipos</h2>
-    <hr class="line-section">
-    <div class="portfolio-grid">
-      <div class="portfolio-item">
-        <a
-          href="https://www.figma.com/file/zVz49rsmxzgSsqHxXqPCvV/Nichenet?type=design&mode=design&t=M0pTX7V8pfpNRq3Q-1"><img
-            class="nicheNet" src="imgs//NicheNet.png" alt="Protótipo 1"></a>
-        <h3>Protótipo Desktop e Mobile para empresa NicheNet</h3>
-      </div>
-
-      <div class="portfolio-item">
-        <a
-          href="https://www.figma.com/file/8N0vuPuU6l9fgZQjkAo4H4/Prot%C3%B3tipo-de-alta-fidelidade?type=design&mode=design&t=M0pTX7V8pfpNRq3Q-1"><img
-            src="imgs/XChallenge.png" alt="Protótipo para um site de avisos sobre a competição WorldSkills"></a>
-        <h3>Site para desafio de uma competição</h3>
-      </div>
-
-      <div class="portfolio-item">
-        <a
-          href="https://www.figma.com/file/2KFctdxbqFPZO9tcl7Fxq4/Prot%C3%B3tipo-de-alta-fidelidade-(wireframe)-(Copy)?type=design&mode=design&t=M0pTX7V8pfpNRq3Q-1"><img
-            src="imgs/Geto.png" alt="Protótipo para um site de compras"></a>
-        <h3>Desktop e Mobile de uma loja de roupa</h3>
-      </div>
-    </div>
-    </div>
-  </section>
+   
 
   <section id="aplicacoes" class="section">
     <h2>Aplicações</h2>
@@ -240,49 +224,10 @@
         <a href="https://github.com/abbarbosa/vitalhub"><img src="imgs/VitalHub.png" alt="Foto 1"></a>
         <h3>Aplicativo de consulta</h3>
       </div>
-    </div>
-  </section>
-
-  <section id="fotografia" class="black-section">
-    <h2 class="title-section-black">Fotografia</h2>
-    <hr class="line-section" />
-    <div class="portfolio-grid">
-      <div class="portfolio-item">
-
-        <a href="https://drive.google.com/drive/folders/11f_kAyAJUOaehp7JKvnWY5u9lDszSvTW?usp=sharing"><img
-            src="imgs/fotos.png" alt="Foto 2">
-          <h3>Ensaio de joias</h3>
-      </div>
-  </section>
-r class="linha">
-    <div class="portfolio-grid">
-      <div class="portfolio-item">
-        <a href="https://www.behance.net/gallery/191445479/Social-Media-Plus-Design">
-          <img class="socialMedia" src="imgs/SocialMedia.png" alt="Mockups">
-        </a>
-        <a href="https://www.behance.net/gallery/191445479/Social-Media-Plus-Design">
-          <img class="socialMedia" src="imgs/Template - carrosel- especial.png" alt="Mockups">
-        </a>
-        <h3>Projeto Social Media para revista de Design</h3>
-      </div>
-    </div>
-  <section class="section">
-    <h2 class="title-section">Social Media </h2>
-    <h
-  </section> -->
+    </div> --!
 
 
-  <footer>
-    <div class="links-externos">
-      <br>
-      <a href="https://www.linkedin.com/in/annabiab/" target="_blank"><img src="imgs/linkedin.svg" alt="Link 1"></a>
-      <a href="https://www.behance.net/annabiab" target="_blank"><img src="imgs/behance.svg" alt="Link 2"></a>
-      <a href="https://www.instagram.com/annabia.design/" target="_blank"><img src="imgs/instagram.svg"
-          alt="Link 4"></a>
-      <a href="https://github.com/abbarbosa" target="_blank"><img src="imgs/github.svg" alt="Link 3"></a>
-      <!-- <p>Para demais redes</p> -->
-    </div>
-  </footer>
-</body>
+ 
 
-</html>
+
+ 
