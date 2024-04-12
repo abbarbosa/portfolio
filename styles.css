@@ -273,7 +273,7 @@ footer {
   margin-top: 250px;
 }
 
-.overlay {
+/* .overlay {
   height: 100%;
   width: 0;
   position: fixed;
@@ -283,7 +283,7 @@ footer {
   background-color: rgba(0,0,0,0.8);
   overflow-x: hidden;
   transition: 0.5s;
-  display: none; /* Adicione esta linha para ocultar o modal inicialmente */
+  display: none;
 }
 
 .overlay-content {
@@ -326,33 +326,17 @@ footer {
 .menu-toggle {
   display: none;
   margin-left: -270px;
-}
+} */
 
-@media only screen and (max-width: 480px) {
-  .menu-toggle {
-    display: block;
-    cursor: pointer;
-  }
+/* @media only screen and (max-width: 480px) {
+  
 
-  .menu {
-    display: none;
-  }
-
-  .menu.active {
-    display: block;
-  }
-
-  .overlay {
-    width: 100%;
-  }
-
-  /* Ajustes para a seção "Sobre Mim" */
+  /*
   .section-about-me {
     flex-direction: column;
-    height: auto; /* Permitir que a altura seja ajustada automaticamente */
-    width: 100%; /* Faz com que a seção ocupe toda a largura da tela em dispositivos menores */
-    margin-left: 0; /* Remove a margem esquerda em dispositivos menores */
-    border-radius: 0; /* Remove o arredondamento das bordas em dispositivos menores */
+    height: auto; 
+    width: 100%; 
+    border-radius: 0;
     padding: 20px;
     text-align: center;
   }
@@ -363,20 +347,20 @@ footer {
 
   .column {
     text-align: center;
-    width: 100%; /* Define a largura da coluna */
+    width: 100%;
   }
 
   .column img {
-    margin-bottom: 20px; /* Adiciona um espaço entre a imagem e o texto */
+    margin-bottom: 20px; 
     max-width: 100%;
     border-radius: 50%;
   }
 
   .column1 {
-    width: 100%; /* Define a largura da coluna */
+    width: 100%; /
     padding: 0 20px;
   }
-}
+} */
 
   
  
