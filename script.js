@@ -30,15 +30,6 @@ function openArea(areaNumber) {
     }
   }     
 
-  function toggleMenu() {
-    var menu = document.querySelector('.menu');
-    menu.classList.toggle('active');
-  }
-  function openNav() {
-    document.getElementById("myNav").style.width = "100%"; // Defina a largura como 100% para ocupar toda a tela
-    document.getElementById("myNav").style.display = "block";
-  }
+ 
+
   
-  function closeNav() {
-    document.getElementById("myNav").style.width = "0";
-  }
