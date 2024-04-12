@@ -273,7 +273,7 @@ footer {
   margin-top: 250px;
 }
 
-/* .overlay {
+.overlay {
   height: 100%;
   width: 0;
   position: fixed;
@@ -326,12 +326,12 @@ footer {
 .menu-toggle {
   display: none;
   margin-left: -270px;
-} */
+} 
 
-/* @media only screen and (max-width: 480px) {
+ @media only screen and (max-width: 480px) {
   
 
-  /*
+  
   .section-about-me {
     flex-direction: column;
     height: auto; 
@@ -357,10 +357,10 @@ footer {
   }
 
   .column1 {
-    width: 100%; /
+    width: 100%; 
     padding: 0 20px;
   }
-} */
+}
 
   
  
