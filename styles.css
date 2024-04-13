@@ -100,6 +100,17 @@ nav ul li a {
   /* centraliza os botões */
 }
 
+.contato {
+  text-align: center;
+  margin-left: 50px;
+}
+
+.link a {
+  color: #756580;
+  /* Cor que você deseja para o link */
+  /* Remova se quiser sublinhar o link */
+}
+
 .btn {
   margin-left: 20px;
   background-color: #FA8E45;
@@ -110,9 +121,10 @@ nav ul li a {
   border-radius: 10px;
   margin-top: 40px;
   height: 60px;
-  width: 270px;
+  width: 260px;
   cursor: pointer;
   display: inline-block;
+  margin-left: 22, 5%;
   /* exibe os botões lado a lado */
 }
 
@@ -138,7 +150,11 @@ nav ul li a {
 .portfolio-item img {
   max-width: 100%;
   border-radius: 10px;
-  /* Adiciona bordas arredondadas às imagens */
+}
+
+.portfolio-item-v1 {
+  height: 60pxpx;
+  border-radius: 10px;
 }
 
 
@@ -280,7 +296,7 @@ footer {
   z-index: 1000;
   top: 0;
   left: 0;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   overflow-x: hidden;
   transition: 0.5s;
   display: none;
@@ -306,7 +322,8 @@ footer {
   transition: 0.3s;
 }
 
-.overlay a:hover, .overlay a:focus {
+.overlay a:hover,
+.overlay a:focus {
   color: #FA8E45;
 }
 
@@ -322,38 +339,3 @@ footer {
 .closebtn:hover {
   color: #FA8E45;
 }
-
- @media only screen and (max-width: 480px) {
-  
- 
-  .section-about-me {
-    flex-direction: column;
-    height: auto; 
-    width: 100%; 
-    padding: 20px;
-    text-align: center;
-  }
-
-  .sobre-content {
-    margin-top: 20px;
-  }
-
-  .column {
-    text-align: center;
-    width: 100%;
-  }
-
-  .column img {
-    margin-bottom: 20px; 
-    max-width: 100%;
-    border-radius: 50%;
-  }
-
-  .column1 {
-    width: 100%; 
-    padding: 0 20px;
-  }
-}
-
-  
- 
