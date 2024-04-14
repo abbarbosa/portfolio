@@ -50,7 +50,7 @@ nav ul li a {
 .section-about-me {
   /* background-color: #8579b7;
     color: rgb(0, 0, 0); */
-  background-color: #756580;
+  background-color: #8305a5;
   color: white;
   font-family: "Quicksand", sans-serif;
   padding: 20px;
@@ -106,7 +106,7 @@ nav ul li a {
 }
 
 .link a {
-  color: #756580;
+  color: #8305a5;
   /* Cor que você deseja para o link */
   /* Remova se quiser sublinhar o link */
 }
