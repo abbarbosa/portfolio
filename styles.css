@@ -11,8 +11,8 @@ header {
   /* background-color: #ffffff; */
   color: #222222;
   padding: 36px;
-  text-align: center;
-  gap: 25px;
+  text-align: end;
+ gap: 30px;
   font-family: "Quicksand", sans-serif;
 }
 
@@ -102,7 +102,9 @@ nav ul li a {
 
 .contato {
   text-align: center;
-  margin-left: 50px;
+ align-items: center;
+  margin-top: 80px;
+  
 }
 
 .link a {
@@ -204,8 +206,9 @@ footer {
 }
 
 .gallery {
-  margin-top: -70px;
-  margin-left: 85px;
+  margin-top: -60px;
+  margin-left: 115px;
+  width: 700px;
 }
 
 .portfolio-grid {
