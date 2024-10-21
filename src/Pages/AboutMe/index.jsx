@@ -55,7 +55,7 @@ function AboutMe() {
 
             <h1 className="text-white text-[30px] leading-none mt-10">histórico</h1>
 
-            <Carousel/>
+            <Carousel className=""/>
 
             <BannerHeader className="w-full mt-[30px]" />
         </div>
