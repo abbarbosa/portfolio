@@ -14,7 +14,8 @@ import { ReactComponent as Premiere } from '../../Assets/habilidades/premiere.sv
 import { ReactComponent as Photoshop } from '../../Assets/habilidades/photoshop.svg';
 import { ReactComponent as Figma } from '../../Assets/habilidades/figma.svg';
 import { ReactComponent as VSCode } from '../../Assets/habilidades/visualstudio.svg';
-import { Carousel } from "../../Components/Carousel";
+import { Contact } from "../../Components/Contact";
+
 
 function AboutMe() {
     return (
@@ -55,9 +56,9 @@ function AboutMe() {
 
             <h1 className="text-white text-[30px] leading-none mt-10">histórico</h1>
 
-            <Carousel className=""/>
+            {/* <Carousel className=""/> */}
 
-            
+            <Contact/>
 
             <BannerHeader className="w-full mt-[30px]" />
         </div>
