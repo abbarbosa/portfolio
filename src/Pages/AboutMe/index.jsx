@@ -56,7 +56,9 @@ function AboutMe() {
 
             <h1 className="text-white text-[30px] leading-none mt-10">histórico</h1>
 
-            <Carousel className=""/>
+            <Carousel/>
+
+            <h1 className="text-white text-[30px] leading-none mt-10">contato</h1>
 
             <Contact/>
 
