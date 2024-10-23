@@ -34,7 +34,7 @@ function AboutMe() {
                 </p>
             </div>
 
-            <h1 className="text-white text-[30px] leading-none mt-10">tecnologias e ferramentas</h1>
+            <h1 className="text-white text-[30px] leading-none mt-10">minhas tecnologias e ferramentas</h1>
 
             <div className="flex items-center justify-center gap-3 mt-5 mb-10">
                 <AfterEffects className="h-[80px]" />
