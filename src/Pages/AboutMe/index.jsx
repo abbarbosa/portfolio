@@ -15,6 +15,7 @@ import { ReactComponent as Photoshop } from '../../Assets/habilidades/photoshop.
 import { ReactComponent as Figma } from '../../Assets/habilidades/figma.svg';
 import { ReactComponent as VSCode } from '../../Assets/habilidades/visualstudio.svg';
 import { Contact } from "../../Components/Contact";
+import { Carousel } from "../../Components/Carousel";
 
 
 function AboutMe() {
