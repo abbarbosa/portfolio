@@ -57,6 +57,8 @@ function AboutMe() {
 
             <Carousel className=""/>
 
+            
+
             <BannerHeader className="w-full mt-[30px]" />
         </div>
     );
