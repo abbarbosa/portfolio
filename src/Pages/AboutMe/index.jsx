@@ -37,25 +37,25 @@ function AboutMe() {
 
             <h1 className="text-white text-[30px] leading-none mt-10">minhas tecnologias e ferramentas</h1>
 
-            <div className="flex items-center justify-center gap-3 mt-5 mb-10">
-                <AfterEffects className="h-[80px]" />
-                <Ilustrator className="h-[80px]" />
-                <Premiere className="h-[80px]" />
-                <Photoshop className="h-[80px]" />
-                <Figma className="h-[80px]" />
-                <VSCode className="h-[80px]" />
+            <div className="flex items-center justify-center gap-3  mb-10">
+                <AfterEffects className="h-[80px] mt-[30px]" />
+                <Ilustrator className="h-[80px] mt-[30px]" />
+                <Premiere className="h-[80px] mt-[30px]" />
+                <Photoshop className="h-[80px] mt-[30px]" />
+                <Figma className="h-[80px] mt-[30px]" />
+                <VSCode className="h-[80px] mt-[30px]" />
             </div>
 
             <div className="flex items-center justify-center gap-3 mt-5 mb-10">
-                <Html className="h-[80px]" />
-                <Css className="h-[80px]" />
-                <Javascript className="h-[80px]" />
-                <ReactIcon className="h-[80px]" />
-                <CSharp className="h-[80px]" />
-                <Sql className="h-[80px]" />
+                <Html className="h-[80px] mt-[10px] mb-[30px]" />
+                <Css className="h-[80px] mt-[10px] mb-[30px]" />
+                <Javascript className="h-[80px] mt-[10px] mb-[30px]" />
+                <ReactIcon className="h-[80px] mt-[10px] mb-[30px]" />
+                <CSharp className="h-[80px] mt-[10px] mb-[30px]" />
+                <Sql className="h-[80px] mt-[10px] mb-[30px]" />
             </div>
 
-            <h1 className="text-white text-[30px] leading-none mt-10">histórico</h1>
+            <h1 className="text-white text-[30px] leading-none mt-[30px]">histórico</h1>
 
             <Carousel/>
 

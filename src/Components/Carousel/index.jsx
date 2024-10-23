@@ -43,7 +43,7 @@ export const Carousel = () => {
     };
 
     return (
-        <div className="relative w-full max-w-[1200px] mx-auto"> {/* Limita a largura do carrossel */}
+        <div className="relative w-full max-w-[1200px] mt-[-10px] mx-auto"> {/* Limita a largura do carrossel */}
             <motion.div
                 ref={carousel}
                 className="w-full min-h-[100vh] flex items-center justify-center cursor-grab overflow-hidden"
