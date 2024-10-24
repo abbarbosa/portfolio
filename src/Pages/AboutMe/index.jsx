@@ -42,7 +42,7 @@ function AboutMe() {
             </div>
 
             {/* Tecnologias e Ferramentas */}
-            <h1 className="text-white text-[30px] text-center mt-10">minhas tecnologias e ferramentas</h1>
+            <h1 className="text-white text-[30px] text-center mt-10 mb-4">minhas tecnologias e ferramentas</h1>
 
             <div className="flex items-center justify-center gap-6 flex-wrap mt-4 mb-10 px-4">
                 <AfterEffects className="h-[80px] mt-[30px]" />
@@ -60,13 +60,13 @@ function AboutMe() {
             </div>
 
             {/* Histórico */}
-            <h1 className="text-white text-[30px] text-center mt-10">histórico</h1>
+            <h1 className="text-white text-[30px] text-center mt-10 mb-4">histórico</h1>
             <div className="mt-10">
                 <Carousel />
             </div>
 
             {/* Contato */}
-            <h1 className="text-white text-[30px] text-center mt-10">contato</h1>
+            <h1 className="text-white text-[30px] text-center mt-10 mb-4">contato</h1>
             <div className="mt-6 px-4">
                 <Contact />
             </div>
