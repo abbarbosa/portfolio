@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { ReactComponent as Logo } from '../../Assets/logo.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import logo from "../../Assets/logo.png";
 
 function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,7 +17,7 @@ function Header() {
         <header className="flex justify-between items-center p-4 bg-[#EBE6E0] border-white/20 rounded-lg shadow-lg">
             {/* Logo */}
             <button className="flex items-center justify-center" onClick={() => navigate("/identidade-visual")}>
-                <Logo className="h-[80px] md:h-[100px]" />
+                <img  className="h-[80px] md:h-[100px] ml-[20%]"  src={logo} alt="" />
             </button>
 
             {/* Ícone de hambúrguer para telas menores */}
@@ -27,11 +27,11 @@ function Header() {
 
             {/* Menu de navegação visível apenas em telas grandes */}
             <nav className="hidden md:flex gap-4 text-[20px]">
-                <Link to="/sobre-mim" className="hover:font-bold">sobre mim</Link>
-                <Link to="/identidade-visual" className="hover:font-bold">identidades visuais</Link>
-                <Link to="/social-media" className="hover:font-bold">social media</Link>
-                <Link to="/desenvolvimento" className="hover:font-bold">desenvolvimento</Link>
-                <Link to="/extras" className="hover:font-bold">extras</Link>
+                <Link to="/sobre-mim" className="hover:font-bold mr-4">sobre mim</Link>
+                <Link to="/identidade-visual" className="hover:font-bold mr-4">identidades visuais</Link>
+                <Link to="/social-media" className="hover:font-bold mr-4">social media</Link>
+                <Link to="/desenvolvimento" className="hover:font-bold mr-4">desenvolvimento</Link>
+                <Link to="/extras" className="hover:font-bold mr-4">extras</Link>
             </nav>
 
             {/* Modal do menu para telas pequenas */}
