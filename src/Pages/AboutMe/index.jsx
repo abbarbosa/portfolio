@@ -17,53 +17,64 @@ import { ReactComponent as VSCode } from '../../Assets/habilidades/visualstudio.
 import { Contact } from "../../Components/Contact";
 import { Carousel } from "../../Components/Carousel";
 
-
 function AboutMe() {
     return (
         <div className="bg-[#2d2d2d]">
+            {/* Header */}
             <Header />
 
-            <h1 className="text-white text-[36px] leading-none mt-10">prazer, <br /> <strong className="text-white">annabia</strong></h1>
+            {/* Introdução */}
+            <div className="text-center mt-10 px-4">
+                <h1 className="text-white text-[36px] leading-none">
+                    prazer, <br />
+                    <strong className="text-white">annabia</strong>
+                </h1>
 
-            <div className="flex items-center justify-center mt-4">
-                <p className="text-white text-center text-[16px]">
-                    Olá! Me chamo Anna Beatriz (mas pode me chamar de Annabia) <br />
-                    uma <strong className="text-white">estudante entusiasta</strong> de design, multimídia e desenvolvimento de sistemas. <br />
-                    Minha jornada acadêmica é uma busca incessante por <strong className="text-white"> criatividade e inovação</strong>, <br />
-                    <strong className="text-white"> explorando as interseções </strong> entre design e tecnologia. Este site é uma vitrine do meu trabalho e minha
-                    <br /> jornada como <strong className="text-white"> estudante e criadora</strong>. Obrigada por fazer parte dela.
-                </p>
+                <div className="flex items-center justify-center mt-4">
+                    <p className="text-white text-center text-[16px] max-w-[600px]">
+                        Olá! Me chamo Anna Beatriz (mas pode me chamar de Annabia), <br />
+                        uma <strong className="text-white">estudante entusiasta</strong> de design, multimídia e desenvolvimento de sistemas. <br />
+                        Minha jornada acadêmica é uma busca incessante por <strong className="text-white">criatividade e inovação</strong>, <br />
+                        <strong className="text-white">explorando as interseções</strong> entre design e tecnologia. Este site é uma vitrine do meu trabalho e minha<br />
+                        jornada como <strong className="text-white">estudante e criadora</strong>. Obrigada por fazer parte dela.
+                    </p>
+                </div>
             </div>
 
-            <h1 className="text-white text-[30px] leading-none mt-10">minhas tecnologias e ferramentas</h1>
+            {/* Tecnologias e Ferramentas */}
+            <h1 className="text-white text-[30px] text-center mt-10">minhas tecnologias e ferramentas</h1>
 
-            <div className="flex items-center justify-center gap-3  mb-10">
+            <div className="flex items-center justify-center gap-6 flex-wrap mt-4 mb-10 px-4">
                 <AfterEffects className="h-[80px] mt-[30px]" />
                 <Ilustrator className="h-[80px] mt-[30px]" />
                 <Premiere className="h-[80px] mt-[30px]" />
                 <Photoshop className="h-[80px] mt-[30px]" />
                 <Figma className="h-[80px] mt-[30px]" />
                 <VSCode className="h-[80px] mt-[30px]" />
+                <Html className="h-[80px] mt-[30px]" />
+                <Css className="h-[80px] mt-[30px]" />
+                <Javascript className="h-[80px] mt-[30px]" />
+                <ReactIcon className="h-[80px] mt-[30px]" />
+                <CSharp className="h-[80px] mt-[30px]" />
+                <Sql className="h-[80px] mt-[30px]" />
             </div>
 
-            <div className="flex items-center justify-center gap-3 mt-5 mb-10">
-                <Html className="h-[80px] mt-[10px] mb-[30px]" />
-                <Css className="h-[80px] mt-[10px] mb-[30px]" />
-                <Javascript className="h-[80px] mt-[10px] mb-[30px]" />
-                <ReactIcon className="h-[80px] mt-[10px] mb-[30px]" />
-                <CSharp className="h-[80px] mt-[10px] mb-[30px]" />
-                <Sql className="h-[80px] mt-[10px] mb-[30px]" />
+            {/* Histórico */}
+            <h1 className="text-white text-[30px] text-center mt-10">histórico</h1>
+            <div className="mt-10">
+                <Carousel />
             </div>
 
-            <h1 className="text-white text-[30px] leading-none mt-[30px]">histórico</h1>
+            {/* Contato */}
+            <h1 className="text-white text-[30px] text-center mt-10">contato</h1>
+            <div className="mt-6 px-4">
+                <Contact />
+            </div>
 
-            <Carousel/>
-
-            <h1 className="text-white text-[30px] leading-none mt-10">contato</h1>
-
-            <Contact/>
-
-            <BannerHeader className="w-full mt-[30px]" />
+            {/* Banner */}
+            <div className="w-full mt-10">
+                <BannerHeader className="w-full" />
+            </div>
         </div>
     );
 }
