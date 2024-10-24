@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "../../Components/Header/index";
-import { ReactComponent as BannerHeader } from '../../Assets/bannerHeader.svg';
 import { ReactComponent as ReactIcon } from '../../Assets/habilidades/react.svg';
 import { ReactComponent as Javascript } from '../../Assets/habilidades/javascript.svg';
 import { ReactComponent as Html } from '../../Assets/habilidades/html.svg';
@@ -16,6 +15,7 @@ import { ReactComponent as Figma } from '../../Assets/habilidades/figma.svg';
 import { ReactComponent as VSCode } from '../../Assets/habilidades/visualstudio.svg';
 import { Contact } from "../../Components/Contact";
 import { Carousel } from "../../Components/Carousel";
+import Footer from "../../Components/Footer";
 
 function AboutMe() {
     return (
@@ -71,10 +71,7 @@ function AboutMe() {
                 <Contact />
             </div>
 
-            {/* Banner */}
-            <div className="w-full mt-10">
-                <BannerHeader className="w-full" />
-            </div>
+            <Footer/>
         </div>
     );
 }

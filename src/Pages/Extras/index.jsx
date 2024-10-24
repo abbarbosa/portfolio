@@ -1,12 +1,12 @@
 import React from "react";
 import Header from "../../Components/Header";
-import { ReactComponent as Banner } from '../../Assets/banner.svg';
+import Footer from "../../Components/Footer";
 
 function Extras(){
     return(
         <div>   
-            <Header/>    
-            <Banner className="w-full mt-[10px]" />   
+            <Header className="bg-[#2D2D2D]"/>    
+            <Footer/> 
         </div>
     )
 }

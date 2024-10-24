@@ -1,13 +1,12 @@
 import React from "react";
 import Header from "../../Components/Header";
-import { ReactComponent as Banner } from '../../Assets/banner.svg';
+import Footer from "../../Components/Footer";
 
 function Identity(){
     return(
-        <div>
+        <div className="bg-[#2D2D2D]">
             <Header/>
-            <text>identidades visuais</text>
-            <Banner className="w-full mt-[10px]" />
+            <Footer/>
         </div>
     )
 }
