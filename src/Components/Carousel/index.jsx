@@ -3,13 +3,13 @@ import hackathon from "../../Assets/carrossel/hackathon.png";
 import palestra from "../../Assets/carrossel/palestra.png";
 import apresentacao from "../../Assets/carrossel/apresentação.png";
 import adobe from "../../Assets/carrossel/adobe.png";
-import azure from "../../Assets/carrossel/azure.png";
+import certificacaoazure from "../../Assets/carrossel/azure.png";
 import { motion } from "framer-motion";
 
 export const Carousel = () => {
     const images = [
         { src: hackathon, title: "Participação em Hackathon" },
-        { src: azure, title: "Certificada em Azure AI-900" },
+        { src: certificacaoazure, title: "Certificada em Azure AI-900" },
         { src: palestra, title: "Palestra sobre empregabilidade" },
         { src: adobe, title: "Certificada Adobe Illustrator" },
         { src: apresentacao, title: "Apresentação do aplicativo Voltair" }
@@ -25,16 +25,18 @@ export const Carousel = () => {
             const offsetWidth = carousel.current.offsetWidth;
             setWidth(scrollWidth - offsetWidth); // Define o limite de scroll para evitar ultrapassar o tamanho do carrossel
         }
-    }, []);
+    }, [images.length]);
 
     const handleDragEnd = (event, info) => {
         const offset = info.offset.x;
-        const newIndex = Math.round((currentIndex * -400 + offset) / -400);
-        setCurrentIndex(Math.min(Math.max(newIndex, 0), images.length - 1)); // Certifica-se de que o novo índice está dentro do intervalo válido
+        if (offset < -100) { // Valor negativo para definir arraste para a esquerda
+            goToNext();
+        } else if (offset > 100) { // Valor positivo para definir arraste para a direita
+            goToPrevious();
+        }
     };
 
     const goToPrevious = () => {
-        // Permite que a seta da esquerda funcione, mesmo que mostre a primeira imagem
         setCurrentIndex((prevIndex) => Math.max(prevIndex - 1, 0));
     };
 
