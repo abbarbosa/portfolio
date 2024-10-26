@@ -11,13 +11,13 @@ function Footer() {
                 <img src={logo} alt="Logo" className="h-[100px] mb-4 sm:mb-0" /> {/* Margem inferior em telas pequenas */}
 
                 <div className="flex space-x-4">
-                    <a href="https://www.instagram.com/annabia.design/"><Instagram className="h-10" /></a>
+                    <a target="_blank" href="https://www.instagram.com/annabia.design/"><Instagram className="h-10" /></a>
 
-                    <a href="https://www.linkedin.com/in/annabiab/"><Linkedin className="h-10" /></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/annabiab/"><Linkedin className="h-10" /></a>
 
-                    <a href="https://www.behance.net/annabiab_"><Behance className="h-10" /> </a>
+                    <a target="_blank" href="https://www.behance.net/annabiab_"><Behance className="h-10" /> </a>
 
-                    <a href="https://github.com/abbarbosa"><Github className="h-10" /></a>
+                    <a target="_blank" href="https://github.com/abbarbosa"><Github className="h-10" /></a>
                 </div>
             </footer>
         </div>
