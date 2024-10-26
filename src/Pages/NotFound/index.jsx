@@ -18,7 +18,7 @@ function NotFound() {
                     <h2 className="text-white text-[20px] md:text-[24px] leading-none mt-[5px]">a página <br /> não foi encontrada</h2>
 
                     <p className="text-white text-[14px] md:text-[16px] leading-none mt-5">
-                        voltar ao 
+                        voltar ao
                         <Link to="/sobre-mim" className="hover:font-bold ml-1 underline">
                             início
                         </Link>
