@@ -29,9 +29,9 @@ export const Carousel = () => {
 
     const handleDragEnd = (event, info) => {
         const offset = info.offset.x;
-        if (offset < -100) { // Valor negativo para definir arraste para a esquerda
+        if (offset < -50) { // Sensibilidade do arraste ajustada para a esquerda
             goToNext();
-        } else if (offset > 100) { // Valor positivo para definir arraste para a direita
+        } else if (offset > 50) { // Sensibilidade do arraste ajustada para a direita
             goToPrevious();
         }
     };
@@ -45,7 +45,7 @@ export const Carousel = () => {
     };
 
     return (
-        <div className="relative w-full max-w-[1200px] mt-[-10px] mx-auto"> {/* Limita a largura do carrossel */}
+        <div className="relative w-full max-w-[1200px] mt-[-10px] mx-auto">
             <motion.div
                 ref={carousel}
                 className="w-full min-h-[100vh] flex items-center justify-center cursor-grab overflow-hidden"
@@ -55,8 +55,8 @@ export const Carousel = () => {
                     className="flex"
                     drag="x"
                     onDragEnd={handleDragEnd}
-                    dragConstraints={{ right: 0, left: -width }} // Limita o movimento ao tamanho do carrossel
-                    animate={{ x: -currentIndex * 400 }} // Anima o carrossel baseado no índice atual
+                    dragConstraints={{ right: 0, left: -width }}
+                    animate={{ x: -currentIndex * 400 }}
                     transition={{ ease: "easeOut", duration: 0.5 }}
                 >
                     {images.map((image, index) => (
@@ -82,13 +82,13 @@ export const Carousel = () => {
             {/* Setas de navegação */}
             <button
                 onClick={goToPrevious}
-                className={`absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full`}
+                className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
             >
                 &#9664; {/* Seta para a esquerda */}
             </button>
             <button
                 onClick={goToNext}
-                disabled={currentIndex === images.length - 1} // Desabilita a seta se estiver no final
+                disabled={currentIndex === images.length - 1}
                 className={`absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full ${
                     currentIndex === images.length - 1 ? "opacity-50 cursor-not-allowed" : "opacity-100"
                 }`}
