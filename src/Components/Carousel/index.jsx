@@ -5,6 +5,8 @@ import apresentacao from "../../Assets/carrossel/apresentação.png";
 import adobe from "../../Assets/carrossel/adobe.png";
 import certificacaoazure from "../../Assets/carrossel/azure.png";
 import { motion } from "framer-motion";
+import grand from "../../Assets/carrossel/grand prix.jpg"
+import { title } from "framer-motion/client";
 
 export const Carousel = () => {
     const images = [
@@ -12,7 +14,8 @@ export const Carousel = () => {
         { src: certificacaoazure, title: "Certificada em Azure AI-900" },
         { src: palestra, title: "Palestra sobre empregabilidade" },
         { src: adobe, title: "Certificada Adobe Illustrator" },
-        { src: apresentacao, title: "Apresentação do aplicativo Voltair" }
+        { src: apresentacao, title: "Apresentação do aplicativo Voltair" },
+        { src: grand, title: "Equipe Grand Prix SENAI de Inovação 2024" }
     ];
 
     const [width, setWidth] = useState(0);
@@ -89,9 +92,8 @@ export const Carousel = () => {
             <button
                 onClick={goToNext}
                 disabled={currentIndex === images.length - 1}
-                className={`absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full ${
-                    currentIndex === images.length - 1 ? "opacity-50 cursor-not-allowed" : "opacity-100"
-                }`}
+                className={`absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full ${currentIndex === images.length - 1 ? "opacity-50 cursor-not-allowed" : "opacity-100"
+                    }`}
             >
                 &#9654; {/* Seta para a direita */}
             </button>
