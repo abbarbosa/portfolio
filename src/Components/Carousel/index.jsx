@@ -1,102 +1,77 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import hackathon from "../../Assets/carrossel/hackathon.png";
 import palestra from "../../Assets/carrossel/palestra.png";
 import apresentacao from "../../Assets/carrossel/apresentação.png";
 import adobe from "../../Assets/carrossel/adobe.png";
 import certificacaoazure from "../../Assets/carrossel/azure.png";
-import { motion } from "framer-motion";
-import grand from "../../Assets/carrossel/grand prix.jpg"
-import { title } from "framer-motion/client";
+import grand from "../../Assets/carrossel/grand prix.jpg";
+
+import 'swiper/css';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
 export const Carousel = () => {
-    const images = [
-        { src: hackathon, title: "Participação em Hackathon" },
-        { src: certificacaoazure, title: "Certificada em Azure AI-900" },
-        { src: palestra, title: "Palestra sobre empregabilidade" },
-        { src: adobe, title: "Certificada Adobe Illustrator" },
-        { src: apresentacao, title: "Apresentação do aplicativo Voltair" },
-        { src: grand, title: "Equipe Grand Prix SENAI de Inovação 2024" }
-    ];
-
-    const [width, setWidth] = useState(0);
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const carousel = useRef();
-
-    useEffect(() => {
-        if (carousel.current) {
-            const scrollWidth = carousel.current.scrollWidth;
-            const offsetWidth = carousel.current.offsetWidth;
-            setWidth(scrollWidth - offsetWidth); // Define o limite de scroll para evitar ultrapassar o tamanho do carrossel
-        }
-    }, [images.length]);
-
-    const handleDragEnd = (event, info) => {
-        const offset = info.offset.x;
-        if (offset < -50) { // Sensibilidade do arraste ajustada para a esquerda
-            goToNext();
-        } else if (offset > 50) { // Sensibilidade do arraste ajustada para a direita
-            goToPrevious();
-        }
-    };
-
-    const goToPrevious = () => {
-        setCurrentIndex((prevIndex) => Math.max(prevIndex - 1, 0));
-    };
-
-    const goToNext = () => {
-        setCurrentIndex((prevIndex) => Math.min(prevIndex + 1, images.length - 1));
-    };
-
     return (
-        <div className="relative w-full max-w-[1200px] mt-[-10px] mx-auto">
-            <motion.div
-                ref={carousel}
-                className="w-full min-h-[100vh] flex items-center justify-center cursor-grab overflow-hidden"
-                whileTap={{ cursor: "grabbing" }}
-            >
-                <motion.div
-                    className="flex"
-                    drag="x"
-                    onDragEnd={handleDragEnd}
-                    dragConstraints={{ right: 0, left: -width }}
-                    animate={{ x: -currentIndex * 400 }}
-                    transition={{ ease: "easeOut", duration: 0.5 }}
-                >
-                    {images.map((image, index) => (
-                        <motion.div
-                            className="min-h-[200px] min-w-[400px] p-[14px] relative group"
-                            key={index}
-                        >
-                            <img
-                                className="w-[100%] h-[100%] pointer-events-none transition-opacity duration-300 group-hover:opacity-50"
-                                src={image.src}
-                                alt={image.title}
-                            />
-                            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                <span className="text-white text-2xl font-bold">
-                                    {image.title}
-                                </span>
-                            </div>
-                        </motion.div>
-                    ))}
-                </motion.div>
-            </motion.div>
-
-            {/* Setas de navegação */}
-            <button
-                onClick={goToPrevious}
-                className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
-            >
-                &#9664; {/* Seta para a esquerda */}
-            </button>
-            <button
-                onClick={goToNext}
-                disabled={currentIndex === images.length - 1}
-                className={`absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full ${currentIndex === images.length - 1 ? "opacity-50 cursor-not-allowed" : "opacity-100"
-                    }`}
-            >
-                &#9654; {/* Seta para a direita */}
-            </button>
-        </div>
+        <Swiper
+            modules={[Navigation, Pagination, Autoplay]}
+            spaceBetween={10}
+            slidesPerView={3}
+            loop={true}
+            autoplay={{ delay: 2500, disableOnInteraction: false }}
+            navigation
+            pagination={{ clickable: true }}
+            className="custom-swiper"
+            breakpoints={{
+                // Quando a largura da tela for 1024px ou maior
+                1024: {
+                    slidesPerView: 3, // 3 slides por vez
+                },
+                // Quando a largura da tela for 768px ou maior
+                768: {
+                    slidesPerView: 2, // 2 slides por vez
+                },
+                // Quando a largura da tela for menor que 768px
+                0: {
+                    slidesPerView: 1, // 1 slide por vez
+                },
+            }}
+        >
+            <SwiperSlide className="custom-slide">
+                <div className="slide-content">
+                    <img src={hackathon} alt="Hackathon" className="custom-image" />
+                    <div className="text-overlay">Hackathon</div>
+                </div>
+            </SwiperSlide>
+            <SwiperSlide className="custom-slide">
+                <div className="slide-content">
+                    <img src={adobe} alt="Adobe" className="custom-image" />
+                    <div className="text-overlay">Adobe</div>
+                </div>
+            </SwiperSlide>
+            <SwiperSlide className="custom-slide">
+                <div className="slide-content">
+                    <img src={palestra} alt="Palestra" className="custom-image" />
+                    <div className="text-overlay">Palestra</div>
+                </div>
+            </SwiperSlide>
+            <SwiperSlide className="custom-slide">
+                <div className="slide-content">
+                    <img src={certificacaoazure} alt="Certificação Azure" className="custom-image" />
+                    <div className="text-overlay">Certificação Azure</div>
+                </div>
+            </SwiperSlide>
+            <SwiperSlide className="custom-slide">
+                <div className="slide-content">
+                    <img src={apresentacao} alt="Apresentação" className="custom-image" />
+                    <div className="text-overlay">Apresentação</div>
+                </div>
+            </SwiperSlide>
+            <SwiperSlide className="custom-slide">
+                <div className="slide-content">
+                    <img src={grand} alt="Grand Prix" className="custom-image" />
+                    <div className="text-overlay">Grand Prix</div>
+                </div>
+            </SwiperSlide>
+        </Swiper>
     );
 };
