@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
 import Modal from "../../Components/Modal";
-import capavictoriarico from "../../Assets/capas/capavictoriarico.png";
+import capavictoriarico from "../../Assets/capas/capavictoriarico-completa.png";
 import capaclarifotos from "../../Assets/capas/capaclarifotos.png";
 import capabigdash from "../../Assets/capas/capabigdash.png";
 import capamedbox from "../../Assets/capas/capamedbox.png";

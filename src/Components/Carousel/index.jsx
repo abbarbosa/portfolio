@@ -39,37 +39,37 @@ export const Carousel = () => {
             <SwiperSlide className="custom-slide">
                 <div className="slide-content">
                     <img src={hackathon} alt="Hackathon" className="custom-image" />
-                    <div className="text-overlay">Hackathon</div>
+                    {/* <div className="text-overlay text-white">Hackathon SENAI e DiggySys</div> */}
                 </div>
             </SwiperSlide>
             <SwiperSlide className="custom-slide">
                 <div className="slide-content">
                     <img src={adobe} alt="Adobe" className="custom-image" />
-                    <div className="text-overlay">Adobe</div>
+                    {/* <div className="text-overlay text-white">Certificação em Adobe Illustrator</div> */}
                 </div>
             </SwiperSlide>
             <SwiperSlide className="custom-slide">
                 <div className="slide-content">
                     <img src={palestra} alt="Palestra" className="custom-image" />
-                    <div className="text-overlay">Palestra</div>
+                    {/* <div className="text-overlay text-white">Palestra sobre empregabilidade</div> */}
                 </div>
             </SwiperSlide>
             <SwiperSlide className="custom-slide">
                 <div className="slide-content">
                     <img src={certificacaoazure} alt="Certificação Azure" className="custom-image" />
-                    <div className="text-overlay">Certificação Azure</div>
+                    {/* <div className="text-overlay text-white">Certificação Azure AI Fundamentals</div> */}
                 </div>
             </SwiperSlide>
             <SwiperSlide className="custom-slide">
                 <div className="slide-content">
                     <img src={apresentacao} alt="Apresentação" className="custom-image" />
-                    <div className="text-overlay">Apresentação</div>
+                    {/* <div className="text-overlay text-white">Apresentação do aplicativo Voltair</div> */}
                 </div>
             </SwiperSlide>
             <SwiperSlide className="custom-slide">
                 <div className="slide-content">
                     <img src={grand} alt="Grand Prix" className="custom-image" />
-                    <div className="text-overlay">Grand Prix</div>
+                    {/* <div className="text-overlay text-white">Equipe Grand Prix SENAI de Inovação</div> */}
                 </div>
             </SwiperSlide>
         </Swiper>
