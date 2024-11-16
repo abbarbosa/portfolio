@@ -5,6 +5,7 @@ import Modal from "../../Components/Modal";
 import plusdesigncapa from "../../Assets/capas/plusDesignCapa.png"
 import { useState } from "react";
 
+
 import plusDesignPost01 from "../../Assets/SocialMediaImages/PlusDesign/post-feed01.png"
 import plusDesignPost03 from "../../Assets/SocialMediaImages/PlusDesign/post-feed03.png"
 import plusDesignPost06 from "../../Assets/SocialMediaImages/PlusDesign/post-feed06.png"
@@ -16,6 +17,7 @@ import plusDesignCarousel02 from "../../Assets/SocialMediaImages/PlusDesign/carr
 import plusDesignCarousel03 from "../../Assets/SocialMediaImages/PlusDesign/carrossel03.png"
 
 import gabicheliga from "../../Assets/capas/gabicheliga.png"
+import cheligamockup from "../../Assets/SocialMediaImages/gabrielleCheliga/tela-insta.png"
 
 import victoriamockoup from "../../Assets/SocialMediaImages/victoriarico/story-post-carrossel.png"
 
@@ -69,9 +71,9 @@ function SocialMedia() {
                     <img src={plusDesignCarousel02} alt="story 02" className="w-full h-auto mt-4" />
                     <img src={plusDesignCarousel03} alt="story 03" className="w-full h-auto mt-4" />
 
-                    <button className="bg-transparent text-[#2D2D2D] rounded-[50px] p-[10px] underline">
+                    {/* <button className="bg-transparent text-[#2D2D2D] rounded-[50px] p-[10px] underline">
                         <a href="https://www.instagram.com/revistaplusdesign/" target="blank">veja mais</a>
-                    </button>
+                    </button> */}
 
                 </div>
             )
@@ -82,18 +84,8 @@ function SocialMedia() {
         {
             src: gabicheliga,
             content: (
-                <div className="h-screen bg-[#2D2D2D] flex flex-col">
-                    <div className="flex flex-col items-center justify-center flex-grow mt-5 gap-5 px-4">
-                        <img src={iconetrabalho} className="h-[100px] md:h-[150px] lg:h-[200px]" alt="Ícone de Trabalho" />
-                        <div className="text-center">
-                            <h1 className="text-white text-[28px] md:text-[36px] leading-none">
-                                <strong className="text-white">Opss!</strong>
-                            </h1>
-                            <h2 className="text-white text-[20px] md:text-[24px] leading-none mt-2">
-                                a página ainda não está pronta
-                            </h2>
-                        </div>
-                    </div>
+                <div className="flex flex-col items-center p-4 sm:p-6 max-h-[500px] overflow-y-auto">
+                    <img src={cheligamockup} alt="" className="w-full h-auto" />
                 </div>
             )
 
@@ -103,6 +95,9 @@ function SocialMedia() {
             content: (
                 <div className="flex flex-col items-center p-4 sm:p-6 max-h-[500px] overflow-y-auto">
                     <img src={victoriamockoup} alt="" className="w-full h-auto" />
+                    {/* <button className="bg-transparent text-[#2D2D2D] rounded-[50px] p-[10px] underline">
+                        <a href="https://www.instagram.com/studio.victoriarico/" target="blank">veja mais</a>
+                    </button> */}
                 </div>
             )
 

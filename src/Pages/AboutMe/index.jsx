@@ -7,6 +7,7 @@ import { ReactComponent as Css } from '../../Assets/habilidades/css.svg';
 import { ReactComponent as CSharp } from '../../Assets/habilidades/c.svg';
 import { ReactComponent as Sql } from '../../Assets/habilidades/sql.svg';
 
+
 import { ReactComponent as AfterEffects } from '../../Assets/habilidades/aftereffects.svg';
 import { ReactComponent as Ilustrator } from '../../Assets/habilidades/illustrator.svg';
 import { ReactComponent as Premiere } from '../../Assets/habilidades/premiere.svg';
@@ -16,6 +17,7 @@ import { ReactComponent as VSCode } from '../../Assets/habilidades/visualstudio.
 import { Contact } from "../../Components/Contact";
 import { Carousel } from "../../Components/Carousel";
 import Footer from "../../Components/Footer";
+
 
 function AboutMe() {
     return (
@@ -59,11 +61,24 @@ function AboutMe() {
                 <Sql className="h-[80px] mt-[30px]" />
             </div>
 
+            <div className="w-full flex items-center justify-center gap-4 px-4">
+                <a href="https://drive.google.com/file/d/1mz4R9ZD5gAX4F_QgANDkw7fyWCfJwXb7/view?usp=sharing" target="_blank">
+                    <button className="text-white text-[24px] p-2 rounded-[50px] hover:underline decoration-[#7877DF] hover:decoration-4 underline-offset-4 decoration-rounded">vizualizar portfólio</button>
+                </a>
+                <a href="https://drive.google.com/file/d/1HOHViwP66Kw44-ba-7D5VaxUgXkKvCjV/view?usp=sharing" target="_blank" >
+                    <button className="text-white text-[24px] p-2 rounded-[50px] hover:underline decoration-[#7877DF] hover:decoration-4 underline-offset-4 decoration-rounded">vizualizar curriculo</button>
+                </a>
+            </div>
+
+
+
+
             {/* Histórico */}
             <h1 className="text-white text-[30px] text-center mt-10 mb-4">histórico</h1>
             <div className="mt-10">
                 <Carousel />
             </div>
+
 
             {/* Contato */}
             <h1 className="text-white text-[30px] text-center mt-10 mb-4">contato</h1>
@@ -71,7 +86,7 @@ function AboutMe() {
                 <Contact />
             </div>
 
-            <Footer/>
+            <Footer />
         </div>
     );
 }
