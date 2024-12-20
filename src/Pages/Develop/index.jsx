@@ -4,9 +4,10 @@ import Footer from "../../Components/Footer";
 import { useState } from "react";
 import Modal from "../../Components/Modal";
 
-import VitalHub from "../../Assets/DevImages/vitalHubCapa.png"
-import capatechconnect from "../../Assets/capas/capatechconnect.png";
-import Voltair from "../../Assets/DevImages/Voltair.png"
+import spiralCapa from "../../Assets/DevImages/sorrisosAmanha.png"
+import capatechconnect from "../../Assets/DevImages/techMockup.png";
+import VoltairMockup from "../../Assets/DevImages/voltairMockup.png"
+import cloudMockup from "../../Assets/DevImages/CloudMockup.png";
 
 function Develop() {
     const [modal, setModal] = useState(false);
@@ -24,7 +25,7 @@ function Develop() {
 
     const images = [
         {
-            src: VitalHub,
+            src: cloudMockup,
             content: (
                 <div className="flex flex-col items-center p-4 sm:p-6 max-h-[500px] overflow-y-auto">
                 </div>
@@ -40,7 +41,7 @@ function Develop() {
         },
 
         {
-            src: Voltair,
+            src: VoltairMockup,
             content: (
                 <div className="flex flex-col items-center p-4 sm:p-6 max-h-[500px] overflow-y-auto">
                 </div>
