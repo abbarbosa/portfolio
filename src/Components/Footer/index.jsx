@@ -6,7 +6,7 @@ import { ReactComponent as Github } from '../../Assets/github.svg';
 
 function Footer() {
     return (
-        <div className="w-full h-60 bg-[#2D2D2D] flex flex-col justify-center items-center mt-[50px]">
+        <div className="w-full h-60 bg-[#2D2D2D] flex flex-col justify-center items-center mt-[100px]">
             <hr className="bg-complementary-white w-full" />
             <footer className="flex flex-col sm:flex-row items-center justify-center gap-[5%] h-full mt-[5%]">
                 <img src={logo} alt="Logo" className="h-[100px] mb-4 sm:mb-0" />

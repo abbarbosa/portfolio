@@ -10,6 +10,10 @@ import 'swiper/css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
+import plusDesignPost01 from "../../Assets/SocialMediaImages/PlusDesign/PscologiaDasCores.png"
+import plusDesignPost02 from "../../Assets/SocialMediaImages/PlusDesign/Post-Jogo.png"
+import plusDesignPost03 from "../../Assets/SocialMediaImages/PlusDesign/Post-tendencia.png"
+
 export const Carousel = () => {
     return (
         <Swiper
@@ -75,3 +79,98 @@ export const Carousel = () => {
         </Swiper>
     );
 };
+
+export const PlusDesignPosts = () => {
+    return (
+        <div>
+            <Swiper
+                modules={[Navigation, Pagination, Autoplay]}
+                spaceBetween={30}
+                slidesPerView={2}
+                loop={true}
+                autoplay={{ delay: 2500, disableOnInteraction: false }}
+                navigation
+                pagination={{ clickable: true }}
+                className="custom-swiper"
+                breakpoints={{
+                    // Quando a largura da tela for 1024px ou maior
+                    1024: {
+                        slidesPerView: 2, // 3 slides por vez
+                    },
+                    // Quando a largura da tela for 768px ou maior
+                    768: {
+                        slidesPerView: 1, // 2 slides por vez
+                    },
+                }}
+            >
+
+                <SwiperSlide className="custom-slide">
+                    <div className="slide-content">
+                        <img src={plusDesignPost01} alt="" className="custom-image" />
+                    </div>
+                </SwiperSlide>
+
+                <SwiperSlide className="custom-slide">
+                    <div className="slide-content">
+                        <img src={plusDesignPost02} alt="" className="custom-image" />
+                    </div>
+                </SwiperSlide>
+
+                <SwiperSlide className="custom-slide">
+                    <div className="slide-content">
+                        <img src={plusDesignPost03} alt="" className="custom-image" />
+                    </div>
+                </SwiperSlide>
+
+            </Swiper>
+        </div>
+    )
+}
+
+export const ViRicoPosts = () => {
+    return (
+        <div>
+            <Swiper
+                modules={[Navigation, Pagination, Autoplay]}
+                spaceBetween={30}
+                slidesPerView={2}
+                loop={true}
+                autoplay={{ delay: 2500, disableOnInteraction: false }}
+                navigation
+                pagination={{ clickable: true }}
+                className="custom-swiper"
+                breakpoints={{
+                    // Quando a largura da tela for 1024px ou maior
+                    1024: {
+                        slidesPerView: 2, // 3 slides por vez
+                    },
+                    // Quando a largura da tela for 768px ou maior
+                    768: {
+                        slidesPerView: 1, // 2 slides por vez
+                    },
+                }}
+            >
+
+                <SwiperSlide className="custom-slide">
+                    <div className="slide-content">
+                        <img src={plusDesignPost01} alt="" className="custom-image" />
+                    </div>
+                </SwiperSlide>
+
+                <SwiperSlide className="custom-slide">
+                    <div className="slide-content">
+                        <img src={plusDesignPost02} alt="" className="custom-image" />
+                    </div>
+                </SwiperSlide>
+
+                <SwiperSlide className="custom-slide">
+                    <div className="slide-content">
+                        <img src={plusDesignPost03} alt="" className="custom-image" />
+                    </div>
+                </SwiperSlide>
+
+            </Swiper>
+        </div>
+    )
+}
+
