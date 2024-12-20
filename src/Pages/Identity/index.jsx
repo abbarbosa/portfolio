@@ -1,4 +1,3 @@
-// Identity.js
 import React, { useState } from "react";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
@@ -12,7 +11,7 @@ import capaabstracao from "../../Assets/capas/capaabstracao.png";
 import capatechconnect from "../../Assets/capas/capatechconnect.png";
 import capagabicheliga from "../../Assets/capas/capagabicheliga.png";
 import capadocelu from "../../Assets/capas/capadocelu.png";
-
+import iconetrabalho from "../../Assets/iconetrabalho.png";
 
 // victoria rico
 import logo01 from "../../Assets/ModalImages/Victoria Rico/logo01.png"
@@ -86,6 +85,15 @@ import techpaleta from "../../Assets/ModalImages/tech connect/paleta.png"
 import techtipografia from "../../Assets/ModalImages/tech connect/tipografia.png"
 import techmockup from "../../Assets/ModalImages/tech connect/mockup.png"
 
+import spiralCapa from "../../Assets/capas/spiralCapa.png"
+import girlsCapa from "../../Assets/capas/girlsOnCapa.png"
+import cloudCapa from "../../Assets/capas/cloudCapa.png"
+
+import chocolatesCapa from "../../Assets/capas/chocolatesAndradeCapa.png"
+import voltairCapa from "../../Assets/capas/voltairCapa.png"
+import realCapa from "../../Assets/capas/realGazCapa.png"
+import patinhasCapa from "../../Assets/capas/patinhasCapa.png"
+
 function Identity() {
 
 
@@ -104,33 +112,11 @@ function Identity() {
         setModalContent(null);
     };
 
-    
+
 
 
     const images = [
-        {
-            src: capavictoriarico,
-            content: (
-                <div className="flex flex-col items-center">
-                    <div className="flex flex-wrap gap-3 mt-6 items-center justify-center">
-                        <img className="h-[80px] sm:h-[100px] w-auto" src={logo01} alt="Logo 1" />
-                        <img className="h-[80px] sm:h-[100px] w-auto" src={logo02} alt="Logo 1" />
-                        <img className="h-[80px] sm:h-[100px] w-auto" src={logo03} alt="Logo 1" />
-                    </div>
 
-                    <div className="flex flex-wrap gap-3 mt-6 items-center justify-center">
-                        <img className="h-[50px]" src={paleta} alt="Paleta" />
-                        {/* <img className="h-[30px]" src={font} alt="Fonte" /> */}
-                    </div>
-
-                    <p className="mt-6 text-center">
-                        A identidade visual do <strong>Studio Victoria Rico</strong> combina a elegância da tipografia <strong>Fraunces</strong> com uma paleta de cores <strong>sóbrias e sofisticadas</strong>, refletindo a <strong>modernidade</strong> e o <strong>carinho</strong> que o estúdio coloca em cada serviço. O uso do ícone de <strong>coração</strong> reforça a <strong>conexão emocional</strong> com os clientes, destacando o <strong>compromisso</strong> com a beleza e a satisfação.
-                    </p>
-
-                    <img className="h-80" src={cartaovisitas} />
-                </div>
-            )
-        },
         {
             src: capabigdash,
             content: (
@@ -157,6 +143,29 @@ function Identity() {
             )
         },
         {
+            src: capavictoriarico,
+            content: (
+                <div className="flex flex-col items-center">
+                    <div className="flex flex-wrap gap-3 mt-6 items-center justify-center">
+                        <img className="h-[80px] sm:h-[100px] w-auto" src={logo01} alt="Logo 1" />
+                        <img className="h-[80px] sm:h-[100px] w-auto" src={logo02} alt="Logo 1" />
+                        <img className="h-[80px] sm:h-[100px] w-auto" src={logo03} alt="Logo 1" />
+                    </div>
+
+                    <div className="flex flex-wrap gap-3 mt-6 items-center justify-center">
+                        <img className="h-[50px]" src={paleta} alt="Paleta" />
+                        {/* <img className="h-[30px]" src={font} alt="Fonte" /> */}
+                    </div>
+
+                    <p className="mt-6 text-center">
+                        A identidade visual do <strong>Studio Victoria Rico</strong> combina a elegância da tipografia <strong>Fraunces</strong> com uma paleta de cores <strong>sóbrias e sofisticadas</strong>, refletindo a <strong>modernidade</strong> e o <strong>carinho</strong> que o estúdio coloca em cada serviço. O uso do ícone de <strong>coração</strong> reforça a <strong>conexão emocional</strong> com os clientes, destacando o <strong>compromisso</strong> com a beleza e a satisfação.
+                    </p>
+
+                    <img className="h-80" src={cartaovisitas} />
+                </div>
+            )
+        },
+        {
             src: capaclarifotos,
             content: (
                 <div className="flex flex-col items-center p-4 sm:p-6 max-h-[500px] overflow-y-auto">
@@ -176,31 +185,7 @@ function Identity() {
                 </div>
             )
         },
-        {
-            src: capagabicheliga,
-            content: (
-                <div className="flex flex-col items-center p-4 sm:p-6 max-h-[500px] overflow-y-auto" >
-                    <div className="flex flex-wrap gap-3 mt-6 justify-center">
-                        <img className="h-[60px] sm:h-[80px] w-auto rounded" src={cheligalogo02} alt="" />
-                        <img className="h-[60px] sm:h-[80px] w-auto rounded" src={cheligalogo01} alt="" />
-                        <img className="h-[60px] sm:h-[80px] w-auto rounded" src={cheligalogo03} alt="" />
-                    </div>
 
-                    <div className="flex flex-wrap gap-3 mt-6 justify-center">
-                        {/* <img className="h-[60px] sm:h-[80px] w-auto rounded mt-6" src={cheligatipografia} alt="" /> */}
-                        <img className="h-[60px] sm:h-[80px] w-auto rounded mt-6" src={cheligapaleta} alt="" />
-                    </div>
-
-                    <p className="text-center text-sm sm:text-base mt-6">
-                        A <strong>Gabrielle Cheliga</strong> é uma advogada que se destaca pela sua identidade visual em <strong>azul</strong> e <strong>branco</strong>, utilizando a fonte <strong>Rounded</strong> e <strong>Brogi Free</strong>. Seu logotipo reflete profissionalismo e acessibilidade, sendo uma escolha ideal para um escritório de advocacia contemporâneo.
-                    </p>
-
-                    <div className="mt-6 flex justify-center">
-                        <img className="h-[200px] sm:h-[320px] w-auto rounded" src={cheligamockup} alt="Mockup Gabrielle Cheliga" />
-                    </div>
-                </div>
-            )
-        },
         {
             src: capanevesadvogados,
             content: (
@@ -226,6 +211,32 @@ function Identity() {
                     </div>
                 </div>
 
+            )
+        },
+
+        {
+            src: capagabicheliga,
+            content: (
+                <div className="flex flex-col items-center p-4 sm:p-6 max-h-[500px] overflow-y-auto" >
+                    <div className="flex flex-wrap gap-3 mt-6 justify-center">
+                        <img className="h-[60px] sm:h-[80px] w-auto rounded" src={cheligalogo02} alt="" />
+                        <img className="h-[60px] sm:h-[80px] w-auto rounded" src={cheligalogo01} alt="" />
+                        <img className="h-[60px] sm:h-[80px] w-auto rounded" src={cheligalogo03} alt="" />
+                    </div>
+
+                    <div className="flex flex-wrap gap-3 mt-6 justify-center">
+                        {/* <img className="h-[60px] sm:h-[80px] w-auto rounded mt-6" src={cheligatipografia} alt="" /> */}
+                        <img className="h-[60px] sm:h-[80px] w-auto rounded mt-6" src={cheligapaleta} alt="" />
+                    </div>
+
+                    <p className="text-center text-sm sm:text-base mt-6">
+                        A <strong>Gabrielle Cheliga</strong> é uma advogada que se destaca pela sua identidade visual em <strong>azul</strong> e <strong>branco</strong>, utilizando a fonte <strong>Rounded</strong> e <strong>Brogi Free</strong>. Seu logotipo reflete profissionalismo e acessibilidade, sendo uma escolha ideal para um escritório de advocacia contemporâneo.
+                    </p>
+
+                    <div className="mt-6 flex justify-center">
+                        <img className="h-[200px] sm:h-[320px] w-auto rounded" src={cheligamockup} alt="Mockup Gabrielle Cheliga" />
+                    </div>
+                </div>
             )
         },
         {
@@ -256,31 +267,6 @@ function Identity() {
             )
         },
         {
-            src: capadocelu,
-            content: (
-
-                <div className="flex flex-col items-center p-4 sm:p-6 max-h-[500px] overflow-y-auto">
-
-                    <div className="flex flex-wrap gap-5 mt-6 justify-center">
-                        <img className="h-[80px] sm:h-[100px] w-auto rounded" src={doceluicone} alt="" />
-                    </div>
-
-                    <div className="flex flex-wrap gap-3 mt-6 justify-center">
-                        {/* <img className="h-[60px] sm:h-[80px] w-auto rounded mt-6" src={docelutipografia} alt="" /> */}
-                        <img className="h-[60px] sm:h-[80px] w-auto rounded mt-6" src={docelupaleta} alt="" />
-                    </div>
-
-                    <p className="text-center text-sm sm:text-base mt-6">
-                        O projeto <strong>Docelu</strong> apresenta um logotipo vibrante em <strong>laranja</strong>, incorporando um ícone de <strong>donut</strong> que simboliza doçura e criatividade. A fonte utilizada é <strong>Bahaus 93</strong>, trazendo um toque moderno e divertido à marca.
-                    </p>
-
-                    <div className="mt-6 flex justify-center">
-                        <img className="h-[200px] sm:h-[320px] w-auto rounded" src={docelumockup} alt="Mockup Neves Advogados" />
-                    </div>
-                </div>
-            )
-        },
-        {
             src: capaabstracao,
             content: (
                 <div className="flex flex-col items-center p-4 sm:p-6 max-h-[500px] overflow-y-auto">
@@ -302,6 +288,26 @@ function Identity() {
 
                     <div className="mt-6 flex justify-center">
                         <img className="h-[200px] sm:h-[320px] w-auto rounded" src={abstramockup} alt="Mockup Neves Advogados" />
+                    </div>
+                </div>
+            )
+        },
+
+        {
+            src: voltairCapa,
+            content: (
+
+                <div className="bg-[#2D2D2D] flex flex-col">
+                    <div className="flex flex-col items-center justify-center flex-grow mt-5 gap-5 px-4">
+                        <img src={iconetrabalho} className="h-[100px] md:h-[150px] lg:h-[200px]" alt="Ícone de Trabalho" />
+                        <div className="text-center">
+                            <h1 className="text-white text-[28px] md:text-[36px] leading-none">
+                                <strong className="text-white">Opss!</strong>
+                            </h1>
+                            <h2 className="text-white text-[20px] md:text-[24px] leading-none mt-2">
+                                a página ainda não está pronta
+                            </h2>
+                        </div>
                     </div>
                 </div>
             )
@@ -332,7 +338,130 @@ function Identity() {
                 </div>
 
             )
+        },
+
+        {
+            src: spiralCapa,
+            content: (
+                <div className="bg-[#2D2D2D] flex flex-col">
+                    <div className="flex flex-col items-center justify-center flex-grow mt-5 gap-5 px-4">
+                        <img src={iconetrabalho} className="h-[100px] md:h-[150px] lg:h-[200px]" alt="Ícone de Trabalho" />
+                        <div className="text-center">
+                            <h1 className="text-white text-[28px] md:text-[36px] leading-none">
+                                <strong className="text-white">Opss!</strong>
+                            </h1>
+                            <h2 className="text-white text-[20px] md:text-[24px] leading-none mt-2">
+                                a página ainda não está pronta
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            )
+        },
+
+        {
+            src: capadocelu,
+            content: (
+                <div className="flex flex-col items-center p-4 sm:p-6 max-h-[500px] overflow-y-auto">
+
+                    <div className="flex flex-wrap gap-5 mt-6 justify-center">
+                        <img className="h-[80px] sm:h-[100px] w-auto rounded" src={doceluicone} alt="" />
+                    </div>
+
+                    <div className="flex flex-wrap gap-3 mt-6 justify-center">
+                        {/* <img className="h-[60px] sm:h-[80px] w-auto rounded mt-6" src={docelutipografia} alt="" /> */}
+                        <img className="h-[60px] sm:h-[80px] w-auto rounded mt-6" src={docelupaleta} alt="" />
+                    </div>
+
+                    <p className="text-center text-sm sm:text-base mt-6">
+                        O projeto <strong>Docelu</strong> apresenta um logotipo vibrante em <strong>laranja</strong>, incorporando um ícone de <strong>donut</strong> que simboliza doçura e criatividade. A fonte utilizada é <strong>Bahaus 93</strong>, trazendo um toque moderno e divertido à marca.
+                    </p>
+
+                    <div className="mt-6 flex justify-center">
+                        <img className="h-[200px] sm:h-[320px] w-auto rounded" src={docelumockup} alt="Mockup Neves Advogados" />
+                    </div>
+                </div>
+
+            )
+        },
+        {
+            src: chocolatesCapa,
+            content: (
+                <div className="bg-[#2D2D2D] flex flex-col">
+                    <div className="flex flex-col items-center justify-center flex-grow mt-5 gap-5 px-4">
+                        <img src={iconetrabalho} className="h-[100px] md:h-[150px] lg:h-[200px]" alt="Ícone de Trabalho" />
+                        <div className="text-center">
+                            <h1 className="text-white text-[28px] md:text-[36px] leading-none">
+                                <strong className="text-white">Opss!</strong>
+                            </h1>
+                            <h2 className="text-white text-[20px] md:text-[24px] leading-none mt-2">
+                                a página ainda não está pronta
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            )
+        },
+
+        {
+            src: realCapa,
+            content: (
+                <div className="bg-[#2D2D2D] flex flex-col">
+                    <div className="flex flex-col items-center justify-center flex-grow mt-5 gap-5 px-4">
+                        <img src={iconetrabalho} className="h-[100px] md:h-[150px] lg:h-[200px]" alt="Ícone de Trabalho" />
+                        <div className="text-center">
+                            <h1 className="text-white text-[28px] md:text-[36px] leading-none">
+                                <strong className="text-white">Opss!</strong>
+                            </h1>
+                            <h2 className="text-white text-[20px] md:text-[24px] leading-none mt-2">
+                                a página ainda não está pronta
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            )
+        },
+
+        {
+            src: cloudCapa,
+            content: (
+                <div className="bg-[#2D2D2D] flex flex-col">
+                    <div className="flex flex-col items-center justify-center flex-grow mt-5 gap-5 px-4">
+                        <img src={iconetrabalho} className="h-[100px] md:h-[150px] lg:h-[200px]" alt="Ícone de Trabalho" />
+                        <div className="text-center">
+                            <h1 className="text-white text-[28px] md:text-[36px] leading-none">
+                                <strong className="text-white">Opss!</strong>
+                            </h1>
+                            <h2 className="text-white text-[20px] md:text-[24px] leading-none mt-2">
+                                a página ainda não está pronta
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            )
+        },
+
+        {
+            src: patinhasCapa,
+            content: (
+                <div className="bg-[#2D2D2D] flex flex-col">
+                    <div className="flex flex-col items-center justify-center flex-grow mt-5 gap-5 px-4">
+                        <img src={iconetrabalho} className="h-[100px] md:h-[150px] lg:h-[200px]" alt="Ícone de Trabalho" />
+                        <div className="text-center">
+                            <h1 className="text-white text-[28px] md:text-[36px] leading-none">
+                                <strong className="text-white">Opss!</strong>
+                            </h1>
+                            <h2 className="text-white text-[20px] md:text-[24px] leading-none mt-2">
+                                a página ainda não está pronta
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            )
         }
+
+
+
     ];
 
 
