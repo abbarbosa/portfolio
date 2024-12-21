@@ -4,10 +4,13 @@ import Footer from "../../Components/Footer";
 import { useState } from "react";
 import Modal from "../../Components/Modal";
 
-import spiralCapa from "../../Assets/DevImages/sorrisosAmanha.png"
+
 import capatechconnect from "../../Assets/DevImages/techMockup.png";
 import VoltairMockup from "../../Assets/DevImages/voltairMockup.png"
 import cloudMockup from "../../Assets/DevImages/CloudMockup.png";
+import ativements from "../../Assets/DevImages/Ativements.png"
+import vitalHub from "../../Assets/DevImages/VitalHub.png"
+import geto from "../../Assets/DevImages/geto.png"
 
 function Develop() {
     const [modal, setModal] = useState(false);
@@ -46,7 +49,32 @@ function Develop() {
                 <div className="flex flex-col items-center p-4 sm:p-6 max-h-[500px] overflow-y-auto">
                 </div>
             )
-        }
+        },
+
+        {
+            src: ativements,
+            content: (
+                <div className="flex flex-col items-center p-4 sm:p-6 max-h-[500px] overflow-y-auto">
+                </div>
+            )
+        },
+
+        {
+            src: vitalHub,
+            content: (
+                <div className="flex flex-col items-center p-4 sm:p-6 max-h-[500px] overflow-y-auto">
+                </div>
+            )
+        },
+
+        {
+            src: geto,
+            content: (
+                <div className="flex flex-col items-center p-4 sm:p-6 max-h-[500px] overflow-y-auto">
+                </div>
+            )
+        },
+
     ]
 
     return (
