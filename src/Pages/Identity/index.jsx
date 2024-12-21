@@ -137,8 +137,6 @@ function Identity() {
                     <p className="mt-6 text-center">
                         A identidade visual do <strong>Studio Victoria Rico</strong> combina a elegância da tipografia <strong>Fraunces</strong> com uma paleta de cores <strong>sóbrias e sofisticadas</strong>, refletindo a <strong>modernidade</strong> e o <strong>carinho</strong> que o estúdio coloca em cada serviço. O uso do ícone de <strong>coração</strong> reforça a <strong>conexão emocional</strong> com os clientes, destacando o <strong>compromisso</strong> com a beleza e a satisfação.
                     </p>
-
-                    <img className="h-80" src={cartaovisitas} />
                 </div>
             )
         },
