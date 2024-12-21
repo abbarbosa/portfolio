@@ -14,6 +14,16 @@ import plusDesignPost01 from "../../Assets/SocialMediaImages/PlusDesign/Pscologi
 import plusDesignPost02 from "../../Assets/SocialMediaImages/PlusDesign/Post-Jogo.png"
 import plusDesignPost03 from "../../Assets/SocialMediaImages/PlusDesign/Post-tendencia.png"
 
+import ViRicoPost01 from "../../Assets/SocialMediaImages/victoriarico/dicas-cuidados_01.png"
+import ViRicoPost02 from "../../Assets/SocialMediaImages/victoriarico/unha-002.png"
+import ViRicoPost03 from "../../Assets/SocialMediaImages/victoriarico/unha-amendoada.png"
+
+
+import GabiCheligaPost01 from "../../Assets/SocialMediaImages/gabrielleCheliga/post-colaboração_01.png"
+import GabiCheligaPost02 from "../../Assets/SocialMediaImages/gabrielleCheliga/post-maconha_01.png"
+import GabiCheligaPost03 from "../../Assets/SocialMediaImages/gabrielleCheliga/post-regime-de-bens_01.png"
+
+
 export const Carousel = () => {
     return (
         <Swiper
@@ -153,19 +163,19 @@ export const ViRicoPosts = () => {
 
                 <SwiperSlide className="custom-slide">
                     <div className="slide-content">
-                        <img src={plusDesignPost01} alt="" className="custom-image" />
+                        <img src={ViRicoPost02} alt="" className="custom-image" />
                     </div>
                 </SwiperSlide>
 
                 <SwiperSlide className="custom-slide">
                     <div className="slide-content">
-                        <img src={plusDesignPost02} alt="" className="custom-image" />
+                        <img src={ViRicoPost01} alt="" className="custom-image" />
                     </div>
                 </SwiperSlide>
 
                 <SwiperSlide className="custom-slide">
                     <div className="slide-content">
-                        <img src={plusDesignPost03} alt="" className="custom-image" />
+                        <img src={ViRicoPost03} alt="" className="custom-image" />
                     </div>
                 </SwiperSlide>
 
@@ -174,3 +184,50 @@ export const ViRicoPosts = () => {
     )
 }
 
+
+export const GabiCheligaPosts = () => {
+    return (
+        <div>
+            <Swiper
+                modules={[Navigation, Pagination, Autoplay]}
+                spaceBetween={30}
+                slidesPerView={2}
+                loop={true}
+                autoplay={{ delay: 2500, disableOnInteraction: false }}
+                navigation
+                pagination={{ clickable: true }}
+                className="custom-swiper"
+                breakpoints={{
+                    // Quando a largura da tela for 1024px ou maior
+                    1024: {
+                        slidesPerView: 2, // 3 slides por vez
+                    },
+                    // Quando a largura da tela for 768px ou maior
+                    768: {
+                        slidesPerView: 1, // 2 slides por vez
+                    },
+                }}
+            >
+
+                <SwiperSlide className="custom-slide">
+                    <div className="slide-content">
+                        <img src={GabiCheligaPost01} alt="" className="custom-image" />
+                    </div>
+                </SwiperSlide>
+
+                <SwiperSlide className="custom-slide">
+                    <div className="slide-content">
+                        <img src={GabiCheligaPost02} alt="" className="custom-image" />
+                    </div>
+                </SwiperSlide>
+
+                <SwiperSlide className="custom-slide">
+                    <div className="slide-content">
+                        <img src={GabiCheligaPost03} alt="" className="custom-image" />
+                    </div>
+                </SwiperSlide>
+
+            </Swiper>
+        </div>
+    )
+}
