@@ -4,7 +4,8 @@ import palestra from "../../Assets/carrossel/palestra.png";
 import apresentacao from "../../Assets/carrossel/apresentação.png";
 import adobe from "../../Assets/carrossel/adobe.png";
 import certificacaoazure from "../../Assets/carrossel/azure.png";
-import grand from "../../Assets/carrossel/grand prix.jpg";
+import grand from "../../Assets/carrossel/grand prix.jpeg";
+import gdg from "../../Assets/carrossel/gdg.jpg"
 
 import 'swiper/css';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -51,39 +52,63 @@ export const Carousel = () => {
             }}
         >
             <SwiperSlide className="custom-slide">
-                <div className="slide-content">
-                    <img src={hackathon} alt="Hackathon" className="custom-image" />
-                    {/* <div className="text-overlay text-white">Hackathon SENAI e DiggySys</div> */}
+                <div className="slide-content relative w-full h-[640px]">
+                    <img src={hackathon} alt="Hackathon" className="custom-image hover:scale-110 transition-transform duration-300" />
+                    <div className="text-overlay absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 text-white text-lg font-semibold">
+                        Hackathon SENAI e DiggySys
+                    </div>
+                </div>
+            </SwiperSlide>
+
+
+            <SwiperSlide className="custom-slide">
+                <div className="slide-content relative w-full h-[640px]">
+                    <img src={adobe} alt="Adobe" className="custom-image hover:scale-110 transition-transform duration-300" />
+                    <div className="text-overlay absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 text-white text-lg font-semibold">
+                        Certificação em Adobe Illustrator
+                    </div>
                 </div>
             </SwiperSlide>
             <SwiperSlide className="custom-slide">
-                <div className="slide-content">
-                    <img src={adobe} alt="Adobe" className="custom-image" />
-                    {/* <div className="text-overlay text-white">Certificação em Adobe Illustrator</div> */}
+                <div className="slide-content relative w-full h-[640px]">
+                    <img src={palestra} alt="Palestra" className="custom-image hover:scale-110 transition-transform duration-300" />
+                    <div className="text-overlay absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 text-white text-lg font-semibold">
+                        Palestra sobre empregabilidade <br /> aplicada pela empresa Stefanini
+                    </div>
                 </div>
             </SwiperSlide>
             <SwiperSlide className="custom-slide">
-                <div className="slide-content">
-                    <img src={palestra} alt="Palestra" className="custom-image" />
-                    {/* <div className="text-overlay text-white">Palestra sobre empregabilidade</div> */}
+                <div className="slide-content relative w-full h-[640px]">
+                    <img src={certificacaoazure} alt="Certificação Azure" className="custom-image hover:scale-110 transition-transform duration-300" />
+                    <div className="text-overlay absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 text-white text-lg font-semibold">
+                        Certificação Azure AI Fundamentals
+                    </div>
                 </div>
             </SwiperSlide>
             <SwiperSlide className="custom-slide">
-                <div className="slide-content">
-                    <img src={certificacaoazure} alt="Certificação Azure" className="custom-image" />
-                    {/* <div className="text-overlay text-white">Certificação Azure AI Fundamentals</div> */}
+                <div className="slide-content relative w-full h-[640px]">
+                    <img src={apresentacao} alt="Apresentação" className="custom-image hover:scale-110 transition-transform duration-300" />
+                    <div className="text-overlay absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 text-white text-lg font-semibold">
+                        Apresentação do aplicativo <br /> Voltair
+                    </div>
                 </div>
             </SwiperSlide>
             <SwiperSlide className="custom-slide">
-                <div className="slide-content">
-                    <img src={apresentacao} alt="Apresentação" className="custom-image" />
-                    {/* <div className="text-overlay text-white">Apresentação do aplicativo Voltair</div> */}
+                <div className="slide-content relative w-full h-[640px]">
+                    <img src={grand} alt="Grand Prix" className="custom-image rounded-[20px] hover:scale-110 transition-transform duration-300" />
+                    <div className="text-overlay absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 text-white text-lg font-semibold flex-col gap-[50px]">
+                        <p className="text-complementary-white">Equipe do projeto Grand Prix <br /> Senai de Inovação</p>
+
+                        <p className="text-complementary-white text-[16px]">imagem aumentada com IA</p>
+                    </div>
                 </div>
             </SwiperSlide>
             <SwiperSlide className="custom-slide">
-                <div className="slide-content">
-                    <img src={grand} alt="Grand Prix" className="custom-image" />
-                    {/* <div className="text-overlay text-white">Equipe Grand Prix SENAI de Inovação</div> */}
+                <div className="slide-content relative w-full h-[640px]">
+                    <img src={gdg} alt="Imagem de um grande grupo reunidos" className="custom-image rounded-[20px] hover:scale-110 transition-transform duration-300" />
+                    <div className="text-overlay absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 text-white text-lg font-semibold">
+                        Evento Google <br />Development Group
+                    </div>
                 </div>
             </SwiperSlide>
         </Swiper>
