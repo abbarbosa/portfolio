@@ -87,7 +87,7 @@ export const Carousel = () => {
             </SwiperSlide>
             <SwiperSlide className="custom-slide">
                 <div className="slide-content relative w-full h-[640px]">
-                    <img src={apresentacao} alt="Apresentação" className="custom-image hover:scale-110 transition-transform duration-300" />
+                    <img src={apresentacao} alt="Apresentação" className="custom-image hover:scale-110 transition-transform duration-300 rounded-t-[20px]" />
                     <div className="text-overlay absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 text-white text-lg font-semibold">
                         Apresentação do aplicativo <br /> Voltair
                     </div>
