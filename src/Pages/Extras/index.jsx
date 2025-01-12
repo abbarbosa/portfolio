@@ -78,6 +78,7 @@ function Extras() {
     const podcast = [
         {
             src: PodPlus,
+
             content: (
                 <div className="flex flex-col items-center p-4 sm:p-6 max-h-[500px] overflow-y-auto">
                     <h2 className="text-xl font-bold mb-2">Plus Design Cast</h2>
