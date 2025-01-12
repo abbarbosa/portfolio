@@ -217,7 +217,7 @@ function Identity() {
                 <div className="flex flex-col items-center p-4 sm:p-6 max-h-[500px] overflow-y-auto">
                     <h2 className="text-xl font-bold mb-2">Patinhas</h2>
                     <p className="text-center text-sm sm:text-base mt-6">
-                        projeto desenvolvido para uma ong com foco em cuidados com animais. A <strong>identidade</strong> utiliza a 
+                        projeto desenvolvido para uma ong com foco em cuidados com animais. A <strong>identidade</strong> utiliza a fonte <strong>Times New Roman</strong> e as cores <strong>laranja</strong> e <strong>preto</strong>.
                     </p>
                 </div>
             )

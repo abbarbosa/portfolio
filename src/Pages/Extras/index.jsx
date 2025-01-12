@@ -33,7 +33,7 @@ function Extras() {
                     </p>
 
                     <a target="blank" href="https://drive.google.com/drive/folders/15HQNEUTt2TOdgO1WzZemfF4wO7z5zT5G?usp=sharing">
-                        <button className="mt-[30px] font-medium">
+                        <button className="mt-[30px] font-medium hover:underline">
                             Clique para ver mais ...
                         </button>
                     </a>
@@ -47,7 +47,7 @@ function Extras() {
                     <h2 className="text-xl font-bold mb-2">Ensaio para revista</h2>
                     <p>O ensaio foi desenvolvido especialmente para a capa de uma revista de grande destaque, com o objetivo de capturar e traduzir de forma autêntica o cotidiano dinâmico e envolvente dos influenciadores digitais. A proposta principal era mergulhar no universo desses criadores de conteúdo, explorando não apenas os momentos glamourosos de suas rotinas, mas também os bastidores, os desafios e as histórias que os tornam tão conectados com seus públicos. Cada clique foi pensado para evidenciar a autenticidade, a criatividade e o impacto que essas personalidades exercem no cenário digital e na cultura contemporânea.</p>
                     <a target="blank" href="https://drive.google.com/drive/folders/1lUVMLb4PtV8UZT8Hku_2mWn_nKMtJnMS?usp=sharing">
-                        <button className="mt-[30px] font-medium">
+                        <button className="mt-[30px] font-medium hover:underline">
                             Clique para ver mais ...
                         </button>
                     </a>
@@ -61,7 +61,7 @@ function Extras() {
             src: capaSinapse,
             content: (
                 <div className="flex flex-col items-center p-4 sm:p-6 max-h-[500px] overflow-y-auto">
-                    <h2 className="text-xl font-bold mb-2">Animação Sinapse</h2>
+                    <h2 className="text-xl font-bold mb-2">Animações Sinapse</h2>
 
                 </div>
             ),
