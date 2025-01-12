@@ -2,10 +2,14 @@ import React, { useState } from "react";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
 import Modal from "../../Components/Modal";
+import { VideoComponent, SinapseVideo } from "../../Components/Video/video";
 
 import capaEnsaio from "../../Assets/Extras/capaEnsaio.png";
 import capaRevista from "../../Assets/Extras/capaRevista.png";
 import capaSinapse from "../../Assets/Extras/capaSinapse.png";
+import SinapseInstitucional from "../../Assets/capas/SinapseInstitucional.png";
+import PodPlus from "../../Assets/Extras/PodPlus.png"
+import PlusDesignCapa from "../../Assets/Extras/CapaEpisodio.png"
 
 function Extras() {
     const [modal, setModal] = useState(false);
@@ -25,6 +29,7 @@ function Extras() {
     const images = [
         {
             src: capaEnsaio,
+            label: "Ensaio fotográfico de acessórios",
             content: (
                 <div className="flex flex-col items-center p-4 sm:p-6 max-h-[500px] overflow-y-auto">
                     <h2 className="text-xl font-bold mb-2">Ensaio para jóias</h2>
@@ -42,6 +47,7 @@ function Extras() {
         },
         {
             src: capaRevista,
+            label: "Ensaio fotográfico para uma edição de revista",
             content: (
                 <div className="flex flex-col items-center p-4 sm:p-6 max-h-[500px] overflow-y-auto">
                     <h2 className="text-xl font-bold mb-2">Ensaio para revista</h2>
@@ -59,22 +65,49 @@ function Extras() {
     const animations = [
         {
             src: capaSinapse,
+            label: "Animações 2d de uma identidade visual",
             content: (
                 <div className="flex flex-col items-center p-4 sm:p-6 max-h-[500px] overflow-y-auto">
                     <h2 className="text-xl font-bold mb-2">Animações Sinapse</h2>
-
+                    <SinapseVideo />
                 </div>
             ),
         },
     ];
 
-    const institutionals = [
+    const podcast = [
+        {
+            src: PodPlus,
+            content: (
+                <div className="flex flex-col items-center p-4 sm:p-6 max-h-[500px] overflow-y-auto">
+                    <h2 className="text-xl font-bold mb-2">Plus Design Cast</h2>
+                    <img src={PlusDesignCapa} alt="Foto de duas pessoas sorrindo para a câmera com um fundo do studio onde foi gravado o episódio" />
+                    <a target="blank" href="https://drive.google.com/file/d/1cpB5sh7rKl3rn-QWzXeh8MqLNuzSzDQM/view?usp=sharing">
+                        <button className="mt-[30px] font-medium hover:underline">
+                            Clique para ver mais ...
+                        </button>
+                    </a>
+                </div>
+            ),
+        },
+    ]
 
+    const institutionals = [
+        {
+            src: SinapseInstitucional,
+            label: "Vídeo Institucional para soluções em multimídia",
+            content: (
+                <div className="flex flex-col items-center p-4 sm:p-6 max-h-[500px] overflow-y-auto">
+                    <h2 className="text-xl font-bold mb-2">Video Institucional Sinapse</h2>
+                    <VideoComponent />
+                </div>
+            ),
+        },
     ];
 
     const filteredItems = () => {
         if (filter === "all") {
-            return [...images, ...animations, ...institutionals];
+            return [...animations, ...images, ...podcast, ...institutionals];
         }
         if (filter === "images") {
             return images;
@@ -84,6 +117,9 @@ function Extras() {
         }
         if (filter === "institutionals") {
             return institutionals;
+        }
+        if (filter === "podcast") {
+            return podcast;
         }
         return [];
     };
@@ -101,18 +137,26 @@ function Extras() {
                     Todos
                 </button>
                 <button
+                    onClick={() => setFilter("animations")}
+                    className={`px-4 py-2 rounded ${filter === "animations" ? "bg-primary-purple text-complementary-white" : "border-gray-300 text-complementary-white"
+                        }`}
+                >
+                    Animações
+                </button>
+                <button
                     onClick={() => setFilter("images")}
                     className={`px-4 py-2 rounded ${filter === "images" ? "bg-primary-purple text-complementary-white" : "border-gray-300 text-complementary-white"
                         }`}
                 >
                     Ensaios Fotográficos
                 </button>
+
                 <button
-                    onClick={() => setFilter("animations")}
-                    className={`px-4 py-2 rounded ${filter === "animations" ? "bg-primary-purple text-complementary-white" : "border-gray-300 text-complementary-white"
+                    onClick={() => setFilter("podcast")}
+                    className={`px-4 py-2 rounded ${filter === "podcast" ? "bg-primary-purple text-complementary-white" : "border-gray-300 text-complementary-white"
                         }`}
                 >
-                    Animações
+                    PodCast
                 </button>
                 <button
                     onClick={() => setFilter("institutionals")}
