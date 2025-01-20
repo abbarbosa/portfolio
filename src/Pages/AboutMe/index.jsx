@@ -65,7 +65,7 @@ function AboutMe() {
                 {/* <a href="https://drive.google.com/file/d/1mz4R9ZD5gAX4F_QgANDkw7fyWCfJwXb7/view?usp=sharing" target="_blank">
                     <button className="text-white text-[24px] p-2 rounded-[50px] hover:underline decoration-[#7877DF] hover:decoration-4 underline-offset-4 decoration-rounded">vizualizar portfólio</button>
                 </a> */}
-                <a href="https://drive.google.com/file/d/1OdDVB1wy6N_MRmsmnJWyIwCdDN2iYvZR/view?usp=sharing" target="_blank" rel="noreferrer" >
+                <a href="https://drive.google.com/file/d/1k1ZDGfLK7ZQu8vQLBADEdQh1Va9s3dv7/view?usp=sharing" target="_blank" rel="noreferrer" >
                     <button className="text-white text-[24px] p-2 rounded-[50px] hover:underline decoration-[#7877DF] hover:decoration-4 underline-offset-4 decoration-rounded">vizualizar curriculo</button>
                 </a>
             </div>
