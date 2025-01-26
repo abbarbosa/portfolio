@@ -41,6 +41,41 @@ function Identity() {
 
     const images = [
 
+        // {
+        //     src: capanevesadvogados,
+        //     content: (
+        //         <div className="flex flex-col items-center p-4 sm:p-6 max-h-[500px] overflow-y-auto">
+        //             <h2 className="text-xl font-bold mb-2">Neves Advogados</h2>
+        //             <p className="text-center text-sm sm:text-base mt-6">
+        //                 O escritório <strong>Neves Advogados</strong> adota uma identidade visual com uma fonte <strong>Times Sans Serif</strong> e uma paleta de cores <strong>preta</strong> como principal. Essa escolha transmite seriedade e confiança, essenciais para um serviço jurídico de excelência.
+        //             </p>
+        //         </div>
+
+        //     )
+        // },
+        // {
+        //     src: capavictoriarico,
+        //     content: (
+        //         <div className="flex flex-col items-center">
+        //             <h2 className="text-xl font-bold mb-2">Studio Victoria Rico</h2>
+        //             <p className="mt-6 text-center">
+        //                 A identidade visual do <strong>Studio Victoria Rico</strong> combina a elegância da tipografia <strong>Fraunces</strong> com uma paleta de cores <strong>sóbrias e sofisticadas</strong>, refletindo a <strong>modernidade</strong> e o <strong>carinho</strong> que o estúdio coloca em cada serviço. O uso do ícone de <strong>coração</strong> reforça a <strong>conexão emocional</strong> com os clientes, destacando o <strong>compromisso</strong> com a beleza e a satisfação.
+        //             </p>
+        //         </div>
+        //     )
+        // },
+        // {
+        //     src: capaclarifotos,
+        //     content: (
+        //         <div className="flex flex-col items-center p-4 sm:p-6 max-h-[500px] overflow-y-auto">
+        //             <h2 className="text-xl font-bold mb-2">Clarifotos</h2>
+        //             <p className="mt-6 text-center text-xs sm:text-sm md:text-base px-4 sm:px-0">
+        //                 A <strong>Clarifotos</strong> é uma fotógrafa independente que realiza <strong>ensaios profissionais</strong> com um estilo único e personalizado. Seu logotipo combina ícones de <strong>câmera</strong> e <strong>sorriso</strong>, simbolizando técnica e emoção. A identidade visual destaca tons de <strong>laranja</strong> vibrante e usa a fonte <strong>Fraunces 9pt SuperSoft</strong>, trazendo uma estética acolhedora e sofisticada que reflete o toque caloroso e profissional da marca.
+        //             </p>
+        //         </div>
+        //     )
+        // },
+
         {
             src: capabigdash,
             content: (
@@ -51,41 +86,6 @@ function Identity() {
                     </p>
 
                 </div>
-            )
-        },
-        {
-            src: capavictoriarico,
-            content: (
-                <div className="flex flex-col items-center">
-                    <h2 className="text-xl font-bold mb-2">Studio Victoria Rico</h2>
-                    <p className="mt-6 text-center">
-                        A identidade visual do <strong>Studio Victoria Rico</strong> combina a elegância da tipografia <strong>Fraunces</strong> com uma paleta de cores <strong>sóbrias e sofisticadas</strong>, refletindo a <strong>modernidade</strong> e o <strong>carinho</strong> que o estúdio coloca em cada serviço. O uso do ícone de <strong>coração</strong> reforça a <strong>conexão emocional</strong> com os clientes, destacando o <strong>compromisso</strong> com a beleza e a satisfação.
-                    </p>
-                </div>
-            )
-        },
-        {
-            src: capaclarifotos,
-            content: (
-                <div className="flex flex-col items-center p-4 sm:p-6 max-h-[500px] overflow-y-auto">
-                    <h2 className="text-xl font-bold mb-2">Clarifotos</h2>
-                    <p className="mt-6 text-center text-xs sm:text-sm md:text-base px-4 sm:px-0">
-                        A <strong>Clarifotos</strong> é uma fotógrafa independente que realiza <strong>ensaios profissionais</strong> com um estilo único e personalizado. Seu logotipo combina ícones de <strong>câmera</strong> e <strong>sorriso</strong>, simbolizando técnica e emoção. A identidade visual destaca tons de <strong>laranja</strong> vibrante e usa a fonte <strong>Fraunces 9pt SuperSoft</strong>, trazendo uma estética acolhedora e sofisticada que reflete o toque caloroso e profissional da marca.
-                    </p>
-                </div>
-            )
-        },
-
-        {
-            src: capanevesadvogados,
-            content: (
-                <div className="flex flex-col items-center p-4 sm:p-6 max-h-[500px] overflow-y-auto">
-                    <h2 className="text-xl font-bold mb-2">Neves Advogados</h2>
-                    <p className="text-center text-sm sm:text-base mt-6">
-                        O escritório <strong>Neves Advogados</strong> adota uma identidade visual com uma fonte <strong>Times Sans Serif</strong> e uma paleta de cores <strong>preta</strong> como principal. Essa escolha transmite seriedade e confiança, essenciais para um serviço jurídico de excelência.
-                    </p>
-                </div>
-
             )
         },
 

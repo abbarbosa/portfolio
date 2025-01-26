@@ -46,19 +46,21 @@ function AboutMe() {
             {/* Tecnologias e Ferramentas */}
             <h1 className="text-white text-[30px] text-center mt-10 mb-4">minhas tecnologias e ferramentas</h1>
 
-            <div className="flex items-center justify-center gap-6 flex-wrap mt-4 mb-10 px-4">
-                <AfterEffects className="h-[80px] mt-[30px]" />
-                <Ilustrator className="h-[80px] mt-[30px]" />
-                <Premiere className="h-[80px] mt-[30px]" />
-                <Photoshop className="h-[80px] mt-[30px]" />
-                <Figma className="h-[80px] mt-[30px]" />
-                <VSCode className="h-[80px] mt-[30px]" />
-                <Html className="h-[80px] mt-[30px]" />
-                <Css className="h-[80px] mt-[30px]" />
-                <Javascript className="h-[80px] mt-[30px]" />
-                <ReactIcon className="h-[80px] mt-[30px]" />
-                <CSharp className="h-[80px] mt-[30px]" />
-                <Sql className="h-[80px] mt-[30px]" />
+            <div className="flex items-center justify-center gap-6 flex-wrap mt-[30px] mb-10 px-4">
+                <div className=" items-center justify-center flex hover:bg-complementary-white h-[100px] w-[100px]">
+                    <AfterEffects className="h-[80px]" />
+                </div>
+                <Ilustrator className="h-[80px]" />
+                <Premiere className="h-[80px]" />
+                <Photoshop className="h-[80px]" />
+                <Figma className="h-[80px]" />
+                <VSCode className="h-[80px]" />
+                <Html className="h-[80px]" />
+                <Css className="h-[80px]" />
+                <Javascript className="h-[80px]" />
+                <ReactIcon className="h-[80px]" />
+                <CSharp className="h-[80px]" />
+                <Sql className="h-[80px]" />
             </div>
 
             <div className="w-full flex items-center justify-center gap-4 px-4">
