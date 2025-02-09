@@ -18,7 +18,7 @@ function SocialMedia() {
                     <div className="flex items-center gap-4">
                         <img
                             src={plusDesignCapa}
-                            className="rounded-full h-[50px] w-[50px]"
+                            className="rounded-full h-[50px] w-[50px] m-[10px]"
                             alt="Logo Plus Design"
                         />
                         <h1 className="font-semibold text-complementary-white text-lg md:text-xl">
@@ -33,7 +33,7 @@ function SocialMedia() {
                     <div className="flex items-center gap-4">
                         <img
                             src={viRicoCapa}
-                            className="rounded-full h-[50px] w-[50px]"
+                            className="rounded-full h-[50px] w-[50px] m-[10px]"
                             alt="Logo Studio Victoria Rico"
                         />
                         <h1 className="font-semibold text-complementary-black text-lg md:text-xl">
@@ -47,7 +47,7 @@ function SocialMedia() {
                     <div className="flex items-center gap-4">
                         <img
                             src={gabiCheligaCapa}
-                            className="rounded-full h-[50px] w-[50px]"
+                            className="rounded-full h-[50px] w-[50px] m-[10px]"
                             alt="Logo Gabrielle Cheliga"
                         />
                         <h1 className="font-semibold text-complementary-white text-lg md:text-xl">

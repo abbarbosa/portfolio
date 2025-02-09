@@ -47,9 +47,7 @@ function AboutMe() {
             <h1 className="text-white text-[30px] text-center mt-10 mb-4">minhas tecnologias e ferramentas</h1>
 
             <div className="flex items-center justify-center gap-6 flex-wrap mt-[30px] mb-10 px-4">
-                <div className=" items-center justify-center flex hover:bg-complementary-white h-[100px] w-[100px]">
-                    <AfterEffects className="h-[80px]" />
-                </div>
+                <AfterEffects className="h-[80px]" />
                 <Ilustrator className="h-[80px]" />
                 <Premiere className="h-[80px]" />
                 <Photoshop className="h-[80px]" />
