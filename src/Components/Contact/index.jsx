@@ -5,17 +5,19 @@ export const Contact = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+    const [phone, setPhone] = useState('')
 
     const params = {
         from_name: name,
         message: message,
         email: email,
+        phone: phone,
     };
 
     function sendEmail(e) {
         e.preventDefault();
 
-        emailjs.send("service_saw85mr", "template_kzbmuno", params, "18m1Foxa94E7IGIEf")
+        emailjs.send("service_xtmfydi", "template_kzbmuno", params, "18m1Foxa94E7IGIEf")
             .then((response) => {
                 console.log('Mensagem enviada com sucesso!', response.status, response.text);
                 alert('Mensagem enviada com sucesso!');
@@ -29,6 +31,7 @@ export const Contact = () => {
                 setEmail('');
                 setName('');
                 setMessage('');
+                setPhone('')
             });
     }
 
@@ -60,6 +63,20 @@ export const Contact = () => {
                         className="w-full p-2 border border-gray-300 rounded-[30px] text-sm md:text-base"
                         onChange={(e) => setEmail(e.target.value)}
                         value={email}
+                    />
+                </div>
+
+                <div>
+                    <label htmlFor="phone" className="block text-gray-700 text-sm md:text-base"></label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder='    Digite seu telefone com DDD'
+                        required
+                        className="w-full p-2 border border-gray-300 rounded-[30px] text-sm md:text-base"
+                        onChange={(e) => setPhone(e.target.value)}
+                        value={phone}
                     />
                 </div>
 

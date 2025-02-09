@@ -32,7 +32,7 @@ function Extras() {
     const images = [
         {
             src: capaEnsaio,
-            label: "Ensaio fotográfico de acessórios",
+            // label: "Ensaio fotográfico de acessórios",
             content: (
                 <div className="flex flex-col items-center p-4 sm:p-6 max-h-[500px] overflow-y-auto">
                     <h2 className="text-xl font-bold mb-2">Ensaio para jóias</h2>
@@ -50,7 +50,7 @@ function Extras() {
         },
         {
             src: capaRevista,
-            label: "Ensaio fotográfico para uma edição de revista",
+            // label: "Ensaio fotográfico para uma edição de revista",
             content: (
                 <div className="flex flex-col items-center p-4 sm:p-6 max-h-[500px] overflow-y-auto">
                     <h2 className="text-xl font-bold mb-2">Ensaio para revista</h2>
@@ -68,7 +68,7 @@ function Extras() {
     const animations = [
         {
             src: capaSinapse,
-            label: "Animações 2d de uma identidade visual",
+            // label: "Animações 2d de uma identidade visual",
             content: (
                 <div className="flex flex-col items-center p-4 sm:p-6 max-h-[500px] overflow-y-auto">
                     <h2 className="text-xl font-bold mb-2">Animações Sinapse</h2>
@@ -81,7 +81,6 @@ function Extras() {
     const podcast = [
         {
             src: PodPlus,
-
             content: (
                 <div className="flex flex-col items-center p-4 sm:p-6 max-h-[500px] overflow-y-auto">
                     <h2 className="text-xl font-bold mb-2">Plus Design Cast</h2>
@@ -99,7 +98,7 @@ function Extras() {
     const institutionals = [
         {
             src: SinapseInstitucional,
-            label: "Vídeo Institucional para soluções em multimídia",
+            // label: "Vídeo Institucional para soluções em multimídia",
             content: (
                 <div className="flex flex-col items-center p-4 sm:p-6 max-h-[500px] overflow-y-auto">
                     <h2 className="text-xl font-bold mb-2">Video Institucional Sinapse</h2>
@@ -112,7 +111,7 @@ function Extras() {
     const printed = [
         {
             src: ImpressoLilian,
-            label: "Design de impressos para uma dentista",
+            // label: "Design de impressos para uma dentista",
             content: (
                 <div>
                     <h2 className="text-xl font-bold mb-2">Impressos para uma dentista</h2>
@@ -135,7 +134,7 @@ function Extras() {
 
         {
             src: ImpressoViRico,
-            label: "Design de impressos para uma nail designer",
+            // label: "Design de impressos para uma nail designer",
             content: (
                 <div>
                     <h2 className="text-xl font-bold mb-2">Impressos para uma nail designer</h2>
