@@ -6,6 +6,7 @@ import adobe from "../../Assets/carrossel/adobe.png";
 import certificacaoazure from "../../Assets/carrossel/azure.png";
 import grand from "../../Assets/carrossel/grand prix.jpeg";
 import gdg from "../../Assets/carrossel/gdg.jpg"
+import formatura from "../../Assets/carrossel/formatura.jpg"
 
 import 'swiper/css';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -108,6 +109,15 @@ export const Carousel = () => {
                     <img src={gdg} alt="Imagem de um grande grupo reunidos" className="custom-image rounded-[20px] hover:scale-110 transition-transform duration-300" />
                     <div className="text-overlay absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 text-white text-lg font-semibold">
                         Evento Google <br />Development Group
+                    </div>
+                </div>
+            </SwiperSlide>
+
+            <SwiperSlide className="custom-slide">
+                <div className="slide-content relative w-full h-[640px]">
+                    <img src={formatura} alt="Hackathon" className="custom-image hover:scale-110 transition-transform duration-300" />
+                    <div className="text-overlay absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 text-white text-lg font-semibold">
+                        Formatura dos cursos técnicos
                     </div>
                 </div>
             </SwiperSlide>

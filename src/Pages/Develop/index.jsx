@@ -14,6 +14,7 @@ import VoltairMockup from "../../Assets/DevImages/voltairMockup.png"
 import cloudMockup from "../../Assets/DevImages/CloudMockup.png";
 import ativements from "../../Assets/DevImages/Ativements.png"
 import vitalHub from "../../Assets/DevImages/VitalHub.png"
+import SpiralCapa from "../../Assets/DevImages/spiralCapa.png"
 
 function Develop() {
     const [modal, setModal] = useState(false);
@@ -183,6 +184,15 @@ function Develop() {
                 </div>
             )
         },
+
+        {
+            src: SpiralCapa,
+            content:(
+                <div>
+
+                </div>
+            )
+        }
 
     ]
 

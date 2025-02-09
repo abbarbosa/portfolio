@@ -10,6 +10,9 @@ import capaSinapse from "../../Assets/Extras/capaSinapse.png";
 import SinapseInstitucional from "../../Assets/capas/SinapseInstitucional.png";
 import PodPlus from "../../Assets/Extras/PodPlus.png"
 import PlusDesignCapa from "../../Assets/Extras/CapaEpisodio.png"
+import ImpressoLilian from "../../Assets/Extras/capaImpressoLilian.png"
+import ImpressoViRico from "../../Assets/Extras/capaViRico.png"
+import iconetrabalho from "../../Assets/iconetrabalho.png"
 
 function Extras() {
     const [modal, setModal] = useState(false);
@@ -106,9 +109,57 @@ function Extras() {
         },
     ];
 
+    const printed = [
+        {
+            src: ImpressoLilian,
+            label: "Design de impressos para uma dentista",
+            content: (
+                <div>
+                    <h2 className="text-xl font-bold mb-2">Impressos para uma dentista</h2>
+                    <div className="h-[500px] bg-[#2D2D2D] flex flex-col">
+                        <div className="flex flex-col items-center justify-center flex-grow mt-5 gap-5 px-4">
+                            <img src={iconetrabalho} className="h-[100px] md:h-[150px] lg:h-[200px]" alt="Ícone de Trabalho" />
+                            <div className="text-center">
+                                <h1 className="text-white text-[28px] md:text-[36px] leading-none">
+                                    <strong className="text-white">Opss!</strong>
+                                </h1>
+                                <h2 className="text-white text-[20px] md:text-[24px] leading-none mt-2">
+                                    a página ainda não está pronta
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )
+        },
+
+        {
+            src: ImpressoViRico,
+            label: "Design de impressos para uma nail designer",
+            content: (
+                <div>
+                    <h2 className="text-xl font-bold mb-2">Impressos para uma nail designer</h2>
+                    <div className="h-[500px] bg-[#2D2D2D] flex flex-col">
+                        <div className="flex flex-col items-center justify-center flex-grow mt-5 gap-5 px-4">
+                            <img src={iconetrabalho} className="h-[100px] md:h-[150px] lg:h-[200px]" alt="Ícone de Trabalho" />
+                            <div className="text-center">
+                                <h1 className="text-white text-[28px] md:text-[36px] leading-none">
+                                    <strong className="text-white">Opss!</strong>
+                                </h1>
+                                <h2 className="text-white text-[20px] md:text-[24px] leading-none mt-2">
+                                    a página ainda não está pronta
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )
+        }
+    ]
+
     const filteredItems = () => {
         if (filter === "all") {
-            return [...animations, ...images, ...podcast, ...institutionals];
+            return [...animations, ...images, ...podcast, ...institutionals, ...printed];
         }
         if (filter === "images") {
             return images;
@@ -121,6 +172,9 @@ function Extras() {
         }
         if (filter === "podcast") {
             return podcast;
+        }
+        if (filter === "printed") {
+            return printed;
         }
         return [];
     };
@@ -165,6 +219,13 @@ function Extras() {
                         }`}
                 >
                     Vídeos Institucionais
+                </button>
+                <button
+                    onClick={() => setFilter("printed")}
+                    className={`px-4 py-2 rounded ${filter === "printed" ? "bg-primary-purple text-complementary-white" : "border-gray-300 text-complementary-white"
+                        }`}
+                >
+                    Impressos
                 </button>
             </div>
 
