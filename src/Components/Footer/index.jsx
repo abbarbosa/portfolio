@@ -14,22 +14,17 @@ function Footer() {
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-5 h-full">
                     <div className="flex space-x-4">
                         <a target="_blank" rel="noreferrer" href="https://www.instagram.com/annabia.design/">
-                            <Instagram className="h-10 w-10 p-[1px] rounded-[10px] hover:bg-[#1c1919]" />
+                            <Instagram className="h-10 w-10 p-[1px] rounded-[10px] transform hover:scale-110 transition duration-300" />
                         </a>
                         <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/annabiab/">
-                            <Linkedin className="h-10 w-10 p-[1px] rounded-[10px] hover:bg-[#1c1919]" />
+                            <Linkedin className="h-10 w-10 p-[1px] rounded-[10px] transform hover:scale-110 transition duration-300" />
                         </a>
                         <a target="_blank" rel="noreferrer" href="https://www.behance.net/annabiab_">
-                            <Behance className="h-10 w-10 p-[1px] rounded-[10px] hover:bg-[#1c1919]" />
+                            <Behance className="h-10 w-10 p-[1px] rounded-[10px] transform hover:scale-110 transition duration-300" />
                         </a>
                         <a target="_blank" rel="noreferrer" href="https://github.com/abbarbosa">
-                            <Github className="h-10 w-10 p-[1px] rounded-[10px] hover:bg-[#1c1919]" />
+                            <Github className="h-10 w-10 p-[1px] rounded-[10px] transform hover:scale-110 transition duration-300" />
                         </a>
-                        {/* link do youtube */}
-                        {/* 
-                        <a target="_blank" href="https://www.youtube.com/channel/UC5_hcecS1zolPSsAJbzCtSA">
-                            <Youtube className="h-10  p-[1px] rounded-[10px] hover:bg-[#1c1919]" />
-                        </a> */}
                     </div>
                 </div>
             </footer>
