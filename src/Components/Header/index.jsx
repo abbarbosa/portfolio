@@ -16,7 +16,7 @@ function Header() {
     return (
         <header className="flex justify-between items-center p-4 bg-[#EBE6E0] border-white/20 rounded-lg shadow-lg">
             {/* Logo */}
-            <button className="flex items-center justify-center" onClick={() => navigate("/identidade-visual")}>
+            <button className="flex items-center justify-center" onClick={() => navigate("/")}>
                 <img  className="h-[80px] md:h-[100px] ml-[20%]"  src={logo} alt="" />
             </button>
 
