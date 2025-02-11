@@ -58,7 +58,7 @@ export const Home = () => {
                 </a>
             </div>
 
-            <div className="flex items-center justify-start flex-col gap-[15px]">
+            <div className="flex items-center justify-start flex-col gap-[15px] mb-[30px]">
                 <h1 className="text-complementary-white font-bold text-[24px] text-left">Minhas redes</h1>
                 <div className="flex flex-col gap-[15px]">
                     <div className="flex items-center justify-start gap-[5px]">
