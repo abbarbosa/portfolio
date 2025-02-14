@@ -10,11 +10,17 @@ import { ReactComponent as VoltairLogo } from "../../Assets/voltairLogo.svg"
 import { ReactComponent as AtivementsLogo } from "../../Assets/ativementsLogo.svg"
 import { ReactComponent as VitalLogo } from "../../Assets/vitalLogo.svg"
 import capatechconnect from "../../Assets/DevImages/techMockup.png";
-import VoltairMockup from "../../Assets/DevImages/voltairMockup.png"
+import voltairMockup from "../../Assets/DevImages/voltairMockup.png"
 import cloudMockup from "../../Assets/DevImages/CloudMockup.png";
 import ativements from "../../Assets/DevImages/Ativements.png"
 import vitalHub from "../../Assets/DevImages/VitalHub.png"
 import SpiralCapa from "../../Assets/DevImages/spiralCapa.png"
+import littleHelp from "../../Assets/DevImages/littleHelp.png"
+import ong from "../../Assets/DevImages/ong.png"
+import graduacao from "../../Assets/DevImages/cienciadedados.png"
+import geto from "../../Assets/DevImages/geto.png"
+import girls from "../../Assets/DevImages/girlsOnTech.png"
+import iconetrabalho from "../../Assets/iconetrabalho.png"
 
 function Develop() {
     const [modal, setModal] = useState(false);
@@ -92,7 +98,7 @@ function Develop() {
         },
 
         {
-            src: VoltairMockup,
+            src: voltairMockup,
             content: (
                 <div className="flex justify-center items-center p-4 sm:p-6 max-h-[500px]">
 
@@ -187,9 +193,132 @@ function Develop() {
 
         {
             src: SpiralCapa,
-            content:(
+            content: (
                 <div>
+                    <h2 className="text-xl font-bold mb-2">Impressos para uma dentista</h2>
+                    <div className="h-[500px] bg-[#2D2D2D] flex flex-col">
+                        <div className="flex flex-col items-center justify-center flex-grow mt-5 gap-5 px-4">
+                            <img src={iconetrabalho} className="h-[100px] md:h-[150px] lg:h-[200px]" alt="Ícone de Trabalho" />
+                            <div className="text-center">
+                                <h1 className="text-white text-[28px] md:text-[36px] leading-none">
+                                    <strong className="text-white">Opss!</strong>
+                                </h1>
+                                <h2 className="text-white text-[20px] md:text-[24px] leading-none mt-2">
+                                    a página ainda não está pronta
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )
+        },
 
+        {
+            src: littleHelp,
+            content: (
+                <div>
+                    <h2 className="text-xl font-bold mb-2">Impressos para uma dentista</h2>
+                    <div className="h-[500px] bg-[#2D2D2D] flex flex-col">
+                        <div className="flex flex-col items-center justify-center flex-grow mt-5 gap-5 px-4">
+                            <img src={iconetrabalho} className="h-[100px] md:h-[150px] lg:h-[200px]" alt="Ícone de Trabalho" />
+                            <div className="text-center">
+                                <h1 className="text-white text-[28px] md:text-[36px] leading-none">
+                                    <strong className="text-white">Opss!</strong>
+                                </h1>
+                                <h2 className="text-white text-[20px] md:text-[24px] leading-none mt-2">
+                                    a página ainda não está pronta
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )
+        },
+
+        {
+            src: ong,
+            content: (
+                <div>
+                    <h2 className="text-xl font-bold mb-2">Impressos para uma dentista</h2>
+                    <div className="h-[500px] bg-[#2D2D2D] flex flex-col">
+                        <div className="flex flex-col items-center justify-center flex-grow mt-5 gap-5 px-4">
+                            <img src={iconetrabalho} className="h-[100px] md:h-[150px] lg:h-[200px]" alt="Ícone de Trabalho" />
+                            <div className="text-center">
+                                <h1 className="text-white text-[28px] md:text-[36px] leading-none">
+                                    <strong className="text-white">Opss!</strong>
+                                </h1>
+                                <h2 className="text-white text-[20px] md:text-[24px] leading-none mt-2">
+                                    a página ainda não está pronta
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )
+        },
+
+        {
+            src: graduacao,
+            content: (
+                <div>
+                    <h2 className="text-xl font-bold mb-2">Impressos para uma dentista</h2>
+                    <div className="h-[500px] bg-[#2D2D2D] flex flex-col">
+                        <div className="flex flex-col items-center justify-center flex-grow mt-5 gap-5 px-4">
+                            <img src={iconetrabalho} className="h-[100px] md:h-[150px] lg:h-[200px]" alt="Ícone de Trabalho" />
+                            <div className="text-center">
+                                <h1 className="text-white text-[28px] md:text-[36px] leading-none">
+                                    <strong className="text-white">Opss!</strong>
+                                </h1>
+                                <h2 className="text-white text-[20px] md:text-[24px] leading-none mt-2">
+                                    a página ainda não está pronta
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )
+        },
+
+        {
+            src: geto,
+            content: (
+                <div>
+                    <h2 className="text-xl font-bold mb-2">Impressos para uma dentista</h2>
+                    <div className="h-[500px] bg-[#2D2D2D] flex flex-col">
+                        <div className="flex flex-col items-center justify-center flex-grow mt-5 gap-5 px-4">
+                            <img src={iconetrabalho} className="h-[100px] md:h-[150px] lg:h-[200px]" alt="Ícone de Trabalho" />
+                            <div className="text-center">
+                                <h1 className="text-white text-[28px] md:text-[36px] leading-none">
+                                    <strong className="text-white">Opss!</strong>
+                                </h1>
+                                <h2 className="text-white text-[20px] md:text-[24px] leading-none mt-2">
+                                    a página ainda não está pronta
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )
+        },
+
+        {
+            src: girls,
+            content: (
+                <div>
+                    <h2 className="text-xl font-bold mb-2">Impressos para uma dentista</h2>
+                    <div className="h-[500px] bg-[#2D2D2D] flex flex-col">
+                        <div className="flex flex-col items-center justify-center flex-grow mt-5 gap-5 px-4">
+                            <img src={iconetrabalho} className="h-[100px] md:h-[150px] lg:h-[200px]" alt="Ícone de Trabalho" />
+                            <div className="text-center">
+                                <h1 className="text-white text-[28px] md:text-[36px] leading-none">
+                                    <strong className="text-white">Opss!</strong>
+                                </h1>
+                                <h2 className="text-white text-[20px] md:text-[24px] leading-none mt-2">
+                                    a página ainda não está pronta
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             )
         }
