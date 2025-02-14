@@ -40,7 +40,7 @@ export const Home = () => {
                         className="w-[200px] rounded-[30px] transform group-hover:scale-110 transition duration-300"
                         alt=""
                     />
-                    <span className="absolute text-complementary-white font-bold mb-[20px]">conheça meu trabalho</span>
+                    <span className="absolute text-complementary-white font-bold mb-[20px]">conheça meus serviços</span>
                 </a>
             </div>
 
