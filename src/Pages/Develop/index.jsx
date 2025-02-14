@@ -198,7 +198,7 @@ function Develop() {
                     <h2 className="text-xl font-bold mb-2">Impressos para uma dentista</h2>
                     <div className="h-[500px] bg-[#2D2D2D] flex flex-col">
                         <div className="flex flex-col items-center justify-center flex-grow mt-5 gap-5 px-4">
-                            <img src={iconetrabalho} className="h-[100px] md:h-[150px] lg:h-[200px]" alt="Ícone de Trabalho" />
+                            <img src={iconetrabalho} className="h-[100px] md:h-[150px] lg:h-[200px]" alt="Ícone de uma pessoa trabalhando" />
                             <div className="text-center">
                                 <h1 className="text-white text-[28px] md:text-[36px] leading-none">
                                     <strong className="text-white">Opss!</strong>
@@ -220,7 +220,7 @@ function Develop() {
                     <h2 className="text-xl font-bold mb-2">Impressos para uma dentista</h2>
                     <div className="h-[500px] bg-[#2D2D2D] flex flex-col">
                         <div className="flex flex-col items-center justify-center flex-grow mt-5 gap-5 px-4">
-                            <img src={iconetrabalho} className="h-[100px] md:h-[150px] lg:h-[200px]" alt="Ícone de Trabalho" />
+                            <img src={iconetrabalho} className="h-[100px] md:h-[150px] lg:h-[200px]" alt="Ícone de uma pessoa trabalhando" />
                             <div className="text-center">
                                 <h1 className="text-white text-[28px] md:text-[36px] leading-none">
                                     <strong className="text-white">Opss!</strong>
@@ -242,7 +242,7 @@ function Develop() {
                     <h2 className="text-xl font-bold mb-2">Impressos para uma dentista</h2>
                     <div className="h-[500px] bg-[#2D2D2D] flex flex-col">
                         <div className="flex flex-col items-center justify-center flex-grow mt-5 gap-5 px-4">
-                            <img src={iconetrabalho} className="h-[100px] md:h-[150px] lg:h-[200px]" alt="Ícone de Trabalho" />
+                            <img src={iconetrabalho} className="h-[100px] md:h-[150px] lg:h-[200px]" alt="Ícone de uma pessoa trabalhando" />
                             <div className="text-center">
                                 <h1 className="text-white text-[28px] md:text-[36px] leading-none">
                                     <strong className="text-white">Opss!</strong>
@@ -264,7 +264,7 @@ function Develop() {
                     <h2 className="text-xl font-bold mb-2">Impressos para uma dentista</h2>
                     <div className="h-[500px] bg-[#2D2D2D] flex flex-col">
                         <div className="flex flex-col items-center justify-center flex-grow mt-5 gap-5 px-4">
-                            <img src={iconetrabalho} className="h-[100px] md:h-[150px] lg:h-[200px]" alt="Ícone de Trabalho" />
+                            <img src={iconetrabalho} className="h-[100px] md:h-[150px] lg:h-[200px]" alt="Ícone de uma pessoa trabalhando" />
                             <div className="text-center">
                                 <h1 className="text-white text-[28px] md:text-[36px] leading-none">
                                     <strong className="text-white">Opss!</strong>
@@ -286,7 +286,7 @@ function Develop() {
                     <h2 className="text-xl font-bold mb-2">Impressos para uma dentista</h2>
                     <div className="h-[500px] bg-[#2D2D2D] flex flex-col">
                         <div className="flex flex-col items-center justify-center flex-grow mt-5 gap-5 px-4">
-                            <img src={iconetrabalho} className="h-[100px] md:h-[150px] lg:h-[200px]" alt="Ícone de Trabalho" />
+                            <img src={iconetrabalho} className="h-[100px] md:h-[150px] lg:h-[200px]" alt="Ícone de uma pessoa trabalhando" />
                             <div className="text-center">
                                 <h1 className="text-white text-[28px] md:text-[36px] leading-none">
                                     <strong className="text-white">Opss!</strong>
@@ -308,7 +308,7 @@ function Develop() {
                     <h2 className="text-xl font-bold mb-2">Impressos para uma dentista</h2>
                     <div className="h-[500px] bg-[#2D2D2D] flex flex-col">
                         <div className="flex flex-col items-center justify-center flex-grow mt-5 gap-5 px-4">
-                            <img src={iconetrabalho} className="h-[100px] md:h-[150px] lg:h-[200px]" alt="Ícone de Trabalho" />
+                            <img src={iconetrabalho} className="h-[100px] md:h-[150px] lg:h-[200px]" alt="Ícone de uma pessoa trabalhando" />
                             <div className="text-center">
                                 <h1 className="text-white text-[28px] md:text-[36px] leading-none">
                                     <strong className="text-white">Opss!</strong>

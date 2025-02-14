@@ -40,7 +40,7 @@ export const Home = () => {
                         className="w-[200px] rounded-[30px] transform group-hover:scale-110 transition duration-300"
                         alt=""
                     />
-                    <span className="absolute text-complementary-white font-bold mb-[20px]">Conheça meu trabalho</span>
+                    <span className="absolute text-complementary-white font-bold mb-[20px]">conheça meu trabalho</span>
                 </a>
             </div>
 
@@ -54,7 +54,7 @@ export const Home = () => {
                         className="w-[200px] rounded-[30px] transform group-hover:scale-110 transition duration-300"
                         alt=""
                     />
-                    <span className="absolute text-complementary-white font-bold mb-[20px]">Entre em contato!</span>
+                    <span className="absolute text-complementary-white font-bold mb-[20px]">entre em contato!</span>
                 </a>
             </div>
 
