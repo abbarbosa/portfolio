@@ -5,7 +5,7 @@ import porta from "../../Assets/porta.png";
 import { Link } from "react-router-dom";
 
 function NotFound() {
-    return (
+return (
         <div className="bg-[#2D2D2D] min-h-screen flex flex-col">
             <Header />
             <div className="flex flex-col md:flex-row items-center justify-center gap-5 mt-10 h-auto md:h-[400px] px-4 md:px-0">

@@ -2,11 +2,8 @@ import React, { useState } from "react";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
 import Modal from "../../Components/Modal";
-import capavictoriarico from "../../Assets/capas/capavictoriarico-completa.png";
-import capaclarifotos from "../../Assets/capas/capaclarifotos.png";
 import capabigdash from "../../Assets/capas/capabigdash.png";
 import capamedbox from "../../Assets/capas/capamedbox.png";
-import capanevesadvogados from "../../Assets/capas/capanevesadvogados.png";
 import capaabstracao from "../../Assets/capas/capaabstracao.png";
 import capatechconnect from "../../Assets/capas/capatechconnect.png";
 import capagabicheliga from "../../Assets/capas/capagabicheliga.png";
@@ -17,6 +14,11 @@ import chocolatesCapa from "../../Assets/capas/chocolatesAndradeCapa.png";
 import voltairCapa from "../../Assets/capas/voltairCapa.png";
 import realCapa from "../../Assets/capas/realGazCapa.png";
 import patinhasCapa from "../../Assets/capas/patinhasCapa.png";
+import iconetrabalho from "../../Assets/iconetrabalho.png"
+import organizaAiCapa from "../../Assets/capas/capaOrganizaAi.png"
+import capaDraLilian from "../../Assets/capas/capaLilianBarros.png"
+import capaclarifotos from "../../Assets/capas/capaclarifotos.png"
+import sos from "../../Assets/capas/sosCapa.png"
 
 function Identity() {
 
@@ -36,46 +38,7 @@ function Identity() {
         setModalContent(null);
     };
 
-
-
-
     const images = [
-
-        // {
-        //     src: capanevesadvogados,
-        //     content: (
-        //         <div className="flex flex-col items-center p-4 sm:p-6 max-h-[500px] overflow-y-auto">
-        //             <h2 className="text-xl font-bold mb-2">Neves Advogados</h2>
-        //             <p className="text-center text-sm sm:text-base mt-6">
-        //                 O escritório <strong>Neves Advogados</strong> adota uma identidade visual com uma fonte <strong>Times Sans Serif</strong> e uma paleta de cores <strong>preta</strong> como principal. Essa escolha transmite seriedade e confiança, essenciais para um serviço jurídico de excelência.
-        //             </p>
-        //         </div>
-
-        //     )
-        // },
-        // {
-        //     src: capavictoriarico,
-        //     content: (
-        //         <div className="flex flex-col items-center">
-        //             <h2 className="text-xl font-bold mb-2">Studio Victoria Rico</h2>
-        //             <p className="mt-6 text-center">
-        //                 A identidade visual do <strong>Studio Victoria Rico</strong> combina a elegância da tipografia <strong>Fraunces</strong> com uma paleta de cores <strong>sóbrias e sofisticadas</strong>, refletindo a <strong>modernidade</strong> e o <strong>carinho</strong> que o estúdio coloca em cada serviço. O uso do ícone de <strong>coração</strong> reforça a <strong>conexão emocional</strong> com os clientes, destacando o <strong>compromisso</strong> com a beleza e a satisfação.
-        //             </p>
-        //         </div>
-        //     )
-        // },
-        // {
-        //     src: capaclarifotos,
-        //     content: (
-        //         <div className="flex flex-col items-center p-4 sm:p-6 max-h-[500px] overflow-y-auto">
-        //             <h2 className="text-xl font-bold mb-2">Clarifotos</h2>
-        //             <p className="mt-6 text-center text-xs sm:text-sm md:text-base px-4 sm:px-0">
-        //                 A <strong>Clarifotos</strong> é uma fotógrafa independente que realiza <strong>ensaios profissionais</strong> com um estilo único e personalizado. Seu logotipo combina ícones de <strong>câmera</strong> e <strong>sorriso</strong>, simbolizando técnica e emoção. A identidade visual destaca tons de <strong>laranja</strong> vibrante e usa a fonte <strong>Fraunces 9pt SuperSoft</strong>, trazendo uma estética acolhedora e sofisticada que reflete o toque caloroso e profissional da marca.
-        //             </p>
-        //         </div>
-        //     )
-        // },
-
         {
             src: capabigdash,
             content: (
@@ -221,8 +184,84 @@ function Identity() {
                     </p>
                 </div>
             )
-        }
+        },
 
+
+        {
+            src: organizaAiCapa,
+            content: (
+                <div>
+                    <h2 className="text-xl font-bold mb-2"></h2>
+                    <div className="h-[500px] bg-[#2D2D2D] flex flex-col">
+                        <div className="flex flex-col items-center justify-center flex-grow mt-5 gap-5 px-4">
+                            <img src={iconetrabalho} className="h-[100px] md:h-[150px] lg:h-[200px]" alt="Ícone de uma pessoa trabalhando" />
+                            <div className="text-center">
+                                <h1 className="text-white text-[28px] md:text-[36px] leading-none">
+                                    <strong className="text-white">Opss!</strong>
+                                </h1>
+                                <h2 className="text-white text-[20px] md:text-[24px] leading-none mt-2">
+                                    a página ainda não está pronta
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )
+        },
+
+        {
+            src: capaDraLilian,
+            content: (
+                <div>
+                    <h2 className="text-xl font-bold mb-2"></h2>
+                    <div className="h-[500px] bg-[#2D2D2D] flex flex-col">
+                        <div className="flex flex-col items-center justify-center flex-grow mt-5 gap-5 px-4">
+                            <img src={iconetrabalho} className="h-[100px] md:h-[150px] lg:h-[200px]" alt="Ícone de uma pessoa trabalhando" />
+                            <div className="text-center">
+                                <h1 className="text-white text-[28px] md:text-[36px] leading-none">
+                                    <strong className="text-white">Opss!</strong>
+                                </h1>
+                                <h2 className="text-white text-[20px] md:text-[24px] leading-none mt-2">
+                                    a página ainda não está pronta
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )
+        },
+        {
+            src: capaclarifotos,
+            content: (
+                <div className="flex flex-col items-center p-4 sm:p-6 max-h-[500px] overflow-y-auto">
+                    <h2 className="text-xl font-bold mb-2">Clarifotos</h2>
+                    <p className="mt-6 text-center text-xs sm:text-sm md:text-base px-4 sm:px-0">
+                        A <strong>Clarifotos</strong> é uma fotógrafa independente que realiza <strong>ensaios profissionais</strong> com um estilo único e personalizado. Seu logotipo combina ícones de <strong>câmera</strong> e <strong>sorriso</strong>, simbolizando técnica e emoção. A identidade visual destaca tons de <strong>laranja</strong> vibrante e usa a fonte <strong>Fraunces 9pt SuperSoft</strong>, trazendo uma estética acolhedora e sofisticada que reflete o toque caloroso e profissional da marca.
+                    </p>
+                </div>
+            )
+        },
+        {
+            src: sos,
+            content: (
+                <div>
+                    <h2 className="text-xl font-bold mb-2"></h2>
+                    <div className="h-[500px] bg-[#2D2D2D] flex flex-col">
+                        <div className="flex flex-col items-center justify-center flex-grow mt-5 gap-5 px-4">
+                            <img src={iconetrabalho} className="h-[100px] md:h-[150px] lg:h-[200px]" alt="Ícone de uma pessoa trabalhando" />
+                            <div className="text-center">
+                                <h1 className="text-white text-[28px] md:text-[36px] leading-none">
+                                    <strong className="text-white">Opss!</strong>
+                                </h1>
+                                <h2 className="text-white text-[20px] md:text-[24px] leading-none mt-2">
+                                    a página ainda não está pronta
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )
+        }
 
 
     ];
